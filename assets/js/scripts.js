@@ -432,7 +432,8 @@ PAGE JS
 				animateOut: $carousel.data("animate-out"),
 				autoplayTimeout : $carousel.data("autoplay-timeout"),
 				smartSpeed: $carousel.data("smart-speed"),
-				responsive: $carousel.data("responsive")
+				responsive: $carousel.data("responsive"),
+				stagePadding:$carousel.data("stagepadding"),
 			});	
 		});
 	}
@@ -463,6 +464,38 @@ PAGE JS
 		});
 	}
 	
+	$(document).on("ready", function() {
+		$('.articles_slider').owlCarousel({
+			loop:false,
+			nav:false,
+			dots:false,
+			margin:20,
+			responsiveClass:true,
+			responsive:{
+				0:{
+                    items:1,
+					loop:true,	
+                    stagePadding:60
+                },
+				540:{
+                    items:1,
+					loop:true,
+                    stagePadding:100
+                },
+                767:{
+                    items:1,
+					loop:true,
+					stagePadding:110
+                },
+                768:{
+                    items:3,
+                },
+                992:{
+                    items:4,
+                }
+			}
+		})
+	});
 	
 	$(document).on("ready", function() {
 		carousel_slider();
@@ -951,28 +984,40 @@ PAGE JS
 	}, false);
 	
 	
-	/*video js*/
-	var video = videojs('video').ready(function(){
-      // Set up any options.
-      var options = {
-        //showTitle: false,
-        showTrackSelector: false,
-      };
 
-      // Initialize the plugin.
-      var transcript = this.transcript(options);
-
-      // Then attach the widget to the page.
-      var transcriptContainer = document.querySelector('#transcript');
-      transcriptContainer.appendChild(transcript.el()); 
-    }); 
-	
+	/*toggle js*/
 	$(function(){
-		$('.transcript-header').click(function(){
+		$('.transcript-header, .togglebox, .mobile_toggle').click(function(){
 			$(this).toggleClass('on');
-			$('.transcript-body').toggle();
+			$('.transcript-body, .toggle_text, .simple_text_reading .small_container').toggle();
 		});
 	});
+	
+	/*tooltip js*/
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+	/*toggle switch js*/
+	$(document).ready(function() {
+		$(".ToggleSwitch").on("change", function () {
+			ToggleSwitch(this);
+		})
+	});
+	
+	function ToggleSwitch(ele) {
+		if($(ele).prop("checked") == true){
+			$('.form_switch').addClass('on');
+			$('.form_switch').removeClass('off');
+			$('body').addClass('font-preview');
+		}
+		else if($(ele).prop("checked") == false){
+			$('.form_switch').addClass('off');
+			$('.form_switch').removeClass('on');
+			$('body').removeClass('font-preview');
+		}
+	}
+
 	
 	$(document).ready(function(){
 		var accordionOpen = $('footer .mobile_toogle .widget_title'),
@@ -985,22 +1030,40 @@ PAGE JS
 		});
 	});
 	
-		
-// cookie policy
-$(document).on('ready', function() {
-  if (document.cookie.indexOf("accepted_cookies=") < 0) {
-    $('.cookie-overlay').removeClass('d-none').addClass('d-block');
-  }
-
-  $('.accept-cookies').on('click', function() {
-    document.cookie = "accepted_cookies=yes;"
-    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-  })
-
-  // expand depending on your needs
-  $('.close-cookies').on('click', function() {
-    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-  })
-})
+	/*video js*/
+	if ($('video').length) {
+		var video = videojs('video').ready(function(){
+		  // Set up any options.
+		  var options = {
+			//showTitle: false,
+			showTrackSelector: false,
+		  };
 	
+		  // Initialize the plugin.
+		  var transcript = this.transcript(options);
+	
+		  // Then attach the widget to the page.
+		  var transcriptContainer = document.querySelector('#transcript');
+		  transcriptContainer.appendChild(transcript.el()); 
+		}); 
+	}
+
+		
+	// cookie policy
+	$(document).on('ready', function() {
+	  if (document.cookie.indexOf("accepted_cookies=") < 0) {
+		$('.cookie-overlay').removeClass('d-none').addClass('d-block');
+	  }
+	
+	  $('.accept-cookies').on('click', function() {
+		document.cookie = "accepted_cookies=yes;"
+		$('.cookie-overlay').removeClass('d-block').addClass('d-none');
+	  })
+	
+	  // expand depending on your needs
+	  $('.close-cookies').on('click', function() {
+		$('.cookie-overlay').removeClass('d-block').addClass('d-none');
+	  })
+	})
+		
 })(jQuery);
