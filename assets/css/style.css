@@ -7356,16 +7356,16 @@ select option {
 	height: 50px;
 }
 .custom_select::before {
-	content: "\e64b";
-	font-family: 'themify';
+	content: "\f078";
+	font-family: "Font Awesome 6 Free";
 	position: absolute;
 	display: block;
-	color: #848484;
+	color: #00B6AA;
 	top: 50%;
 	right: 15px;
 	font-weight: 900;
 	pointer-events: none;
-	font-size: 12px;
+	font-size: 14px;
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -7679,61 +7679,6 @@ footer .widget_recent_post .post_img img {
 	width: 30px;
 }
 
-.widget_tweet_feed li {
-	list-style: none;
-	position: relative;
-	font-size: 14px;
-	padding-bottom: 15px;
-	padding-left: 25px;
-}
-.widget_tweet_feed li::before {
-	content: "\e74b";
-	font-family: 'themify';
-	position: absolute;
-	left: 0;
-	top: 0;
-	color: #292B2C;
-}
-.widget_tweet_feed a {
-	color: #00B6AA;
-}
-.widget_tweet_feed li:last-child {
-	padding-bottom: 0px;
-}
-.widget_instafeed {
-	margin: -2px;
-	display: table;
-}
-.widget_instafeed li {
-	list-style: none;
-	float: left;
-	width: 33.33%;
-	padding: 2px;
-	position: relative;
-}
-.instafeed_col4 li {
-	width: 25%;
-}
-.widget_instafeed li a {
-	display: block;
-	position: relative;
-	overflow: hidden;
-}
-.widget_instafeed li a::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	opacity: 0;
-	background-color: rgba(0,0,0,0.8);
-	transition: all 0.5s ease-in-out;
-	z-index: 1;
-}
-.widget_instafeed img {
-	width: 100%;
-}
 .insta_icon {
 	color: #fff;
 	font-size: 16px;
@@ -8162,16 +8107,6 @@ footer .widget_recent_post .post_img img {
 .nav_style6.owl-theme .owl-nav [class*="owl-"] {
 	background-color: transparent;
 	color: #333;
-}
-.nav_style6 .owl-prev i::before {
-	content: "\e64a";
-	font-family: themify;
-	font-size: 40px;
-}
-.nav_style6 .owl-next i::before {
-	content: "\e649";
-	font-family: themify;
-	font-size: 40px;
 }
 .nav_style7.owl-theme .owl-nav .owl-prev {
 	left: 30px;
@@ -9660,6 +9595,15 @@ blockquote p:last-child {
 }
 .blog_post .blog_dec a {
 	color: #7C8696;
+}
+.blog_post .blog_dec span {
+	position: relative;
+	margin-right: 16px;
+}
+.blog_post .blog_dec span::after {
+	content: "•";
+	position: absolute;
+	right: -8px;
 }
 .blog_post .blog_content .blog_title {
 	font-weight:500;
