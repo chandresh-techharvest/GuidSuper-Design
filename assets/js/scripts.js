@@ -180,7 +180,7 @@ PAGE JS
 	
 	var topheaderHeight = $(".top-header").innerHeight();
 	var mainheaderHeight = $(".header_wrap").innerHeight();
-	var headerHeight = mainheaderHeight - topheaderHeight - 20;
+	var headerHeight = mainheaderHeight - topheaderHeight + 20;
     $('a.page-scroll[href*="#"]:not([href="#"])').on('click', function() {
 		$('a.page-scroll.active').removeClass('active');
 		$(this).closest('.page-scroll').addClass('active');
@@ -1004,7 +1004,6 @@ PAGE JS
 			ToggleSwitch(this);
 		})
 	});
-	
 	function ToggleSwitch(ele) {
 		if($(ele).prop("checked") == true){
 			$('.form_switch').addClass('on');
@@ -1017,8 +1016,45 @@ PAGE JS
 			$('body').removeClass('font-preview');
 		}
 	}
-
 	
+	/*mobile tab responsive*/
+	(function ($){
+		$.fn.responsiveTabs = function() {
+		this.addClass('responsive-tabs'),
+		this.append($('<span class="dropdown-arrow"></span>')),
+	
+		this.on("click", "li > a.active, span.dropdown-arrow", function (){
+				this.toggleClass('open');
+			}.bind(this)), this.on("click", "li > a:not(.active)", function() {
+				this.removeClass("open")
+			}.bind(this)); 
+		}
+	})(jQuery);
+	$(document).ready(function() {
+		$('.mobile_tabs').responsiveTabs();
+	});
+	
+	if (screen.width <= 767) {
+		$('.categories_list ul').each(function(){
+			var list=$(this),
+				select=$(document.createElement('select')).insertBefore($(this).hide()).change(function(){
+			  window.location.href=$(this).val();
+			});
+			$('>li a', this).each(function(){
+			  var option=$(document.createElement('option'))
+			   .appendTo(select)
+			   .val(this.href)
+			   .html($(this).html());
+			  if($(this).attr('class') === 'selected'){
+				option.attr('selected','selected');
+			  }
+			});
+			list.remove();
+		});
+	}
+
+
+	/*Footer Toogle*/
 	$(document).ready(function(){
 		var accordionOpen = $('footer .mobile_toogle .widget_title'),
 				secondDepth = $('footer .mobile_toogle .widget_links');
@@ -1046,6 +1082,22 @@ PAGE JS
 		  var transcriptContainer = document.querySelector('#transcript');
 		  transcriptContainer.appendChild(transcript.el()); 
 		}); 
+		var video = videojs('mobilevideo').ready(function(){
+		  // Set up any options.
+		  var options = {
+			//showTitle: false,
+			showTrackSelector: false,
+		  };
+	
+		  // Initialize the plugin.
+		  var transcript = this.transcript(options);
+	
+		  // Then attach the widget to the page.
+		  var transcriptContainer = document.querySelector('#mobiletranscript');
+		  transcriptContainer.appendChild(transcript.el()); 
+		}); 
+
+		 
 	}
 
 		

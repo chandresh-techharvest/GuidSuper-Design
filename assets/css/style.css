@@ -647,6 +647,9 @@ header .btn {
 .bg_gray {
 	background-color: #F1F2F2 !important;
 }
+.bg_light_gray {
+	background-color: rgba(209, 211, 212, 0.15) !important;
+}
 .bg_light_blue {
 	background-color: #B2AFD4 !important;
 }
@@ -2899,14 +2902,13 @@ input.text {
 /*===================================*
   03.END BANNER,SLIDER STYLE
 *===================================*/
-
-.small_spacing {
-	margin-right: -7.5px;
-	margin-left: -7.5px;
+.big_spacing {
+	margin-right: -36px;
+	margin-left: -36px;
 }
-.small_spacing [class^="col-"] {
-	padding-right: 7.5px;
-	padding-left: 7.5px;
+.big_spacing [class^="col-"] {
+	padding-right: 36px;
+	padding-left: 36px;
 }
 .medium_spacing {
 	margin-right: -10px;
@@ -2916,14 +2918,15 @@ input.text {
 	padding-right: 10px;
 	padding-left: 10px;
 }
-.big_spacing {
-	margin-right: -36px;
-	margin-left: -36px;
+.small_spacing {
+	margin-right: -7.5px;
+	margin-left: -7.5px;
 }
-.big_spacing [class^="col-"] {
-	padding-right: 36px;
-	padding-left: 36px;
+.small_spacing [class^="col-"] {
+	padding-right: 7.5px;
+	padding-left: 7.5px;
 }
+
 .btn-group-sm > .btn, .btn-sm {
 	/*padding: 10px 20px;*/
 	font-weight:500;
@@ -7815,6 +7818,19 @@ footer .widget_recent_post .post_img img {
 .tab-style3 .tab-content.shop_info_tab {
 	margin-top: 30px;
 }
+.tab-style4 .nav-tabs {
+	border-bottom: 1px solid #D1D3D4;
+}
+.tab-style4 .nav-tabs .nav-item.show .nav-link,
+.tab-style4 .nav-tabs .nav-link.active {
+	background-color: #fff;
+	border-bottom:2px solid #00B6AA;
+	color: #11274A;
+	font-weight:700;
+}
+.tab-style4 .nav-tabs li.nav-item a {
+	padding: 14px 20px;
+}
 .custome-checkbox .form-check-label {
 	position: relative;
 	cursor: pointer;
@@ -9747,7 +9763,6 @@ blockquote p:last-child {
 	/*width: 100%;*/
 }
 .doc_box .doc_text span {
-	vertical-align:middle;
 	line-height: 1;
 }
 .doc_box .doc_text i {
@@ -9913,6 +9928,39 @@ blockquote p:last-child {
 	overflow: hidden;
 }
 
+.widget_post li {
+	list-style: none;
+	border-bottom: 1px solid #D1D3D4;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.widget_post li:last-child {
+	border-bottom:0;
+}
+.widget_post li .blog_list {
+	margin: 0;
+}
+.widget_post li .blog_list .post_content p {
+	margin: 0;
+}
 
+.categories_list li {
+	list-style: none;
+}
+.categories_list li a {
+	padding: 10px 0;
+	display: inline-block;
+	border-bottom:2px solid transparent;
+}
+.categories_list li a:hover,
+.categories_list li a.active {
+	border-bottom:2px solid #00B6AA;
+}
 
-
+.forms_documents .doc_box .doc_text {
+	max-width: 85%;
+}
+.forms_documents .doc_download i {
+	font-size: 22px;
+	line-height: normal;
+}
