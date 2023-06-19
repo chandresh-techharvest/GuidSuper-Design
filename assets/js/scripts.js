@@ -1052,7 +1052,54 @@ PAGE JS
 			list.remove();
 		});
 	}
+	
+	$( document ).ready(function () {
+	  $(".FormsMoreBox").slice(0, 4).show();
+	  	$(".FormsMoreBox").hide();
+		$(".FormsMoreBox").slice(0, 4).show();
+		if ($(".FormsBox:hidden").length != 0) {
+		  $("#FormloadMore").show();
+		}   
+		$("#FormloadMore").on('click', function (e) {
+		  e.preventDefault();
+		  $(".FormsMoreBox:hidden").slice(0, 5).slideDown();
+		  if ($(".FormsMoreBox:hidden").length == 0) {
+			$("#FormloadMore").fadeOut('slow');
+		  }
+		});
+	});
 
+	$( document ).ready(function () {
+	  $(".articlesMoreBox").slice(0, 8).show();
+	  	$(".articlesMoreBox").hide();
+		$(".articlesMoreBox").slice(0, 8).show();
+		if ($(".articlesBox:hidden").length != 0) {
+		  $("#articlesMore").show();
+		}   
+		$("#articlesMore").on('click', function (e) {
+		  e.preventDefault();
+		  $(".articlesMoreBox:hidden").slice(0, 8).slideDown();
+		  if ($(".articlesMoreBox:hidden").length == 0) {
+			$("#articlesMore").fadeOut('slow');
+		  }
+		});
+	});
+	
+	$( document ).ready(function () {
+	  $(".ContentMoreBox").slice(0, 8).show();
+	  	$(".ContentMoreBox").hide();
+		$(".ContentMoreBox").slice(0, 8).show();
+		if ($(".ContentBox:hidden").length != 0) {
+		  $("#ContentloadMore").show();
+		}   
+		$("#ContentloadMore").on('click', function (e) {
+		  e.preventDefault();
+		  $(".ContentMoreBox:hidden").slice(0, 8).slideDown();
+		  if ($(".ContentMoreBox:hidden").length == 0) {
+			$("#ContentloadMore").fadeOut('slow');
+		  }
+		});
+	});
 
 	/*Footer Toogle*/
 	$(document).ready(function(){
