@@ -764,6 +764,7 @@ PAGE JS
 	24. PRICE FILTER JS
 	*===================================*/
 	$('#price_filter').each( function() {
+		var sliding = false;
 		var $filter_selector = $(this);
 		var a = $filter_selector.data("min-value");
 		var b = $filter_selector.data("max-value");
@@ -773,12 +774,15 @@ PAGE JS
 			max: $filter_selector.data("max"),
 			values: [ a, b ],
 			slide: function( event, ui ) {
-				$( "#flt_price" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-				$( "#price_first" ).val(ui.values[ 0 ]);
+				$( "#flt_price" ).html( "$" + ui.values[ 1 ] );
+				//$( "#price_first" ).val(ui.values[ 0 ]);
 				$( "#price_second" ).val(ui.values[ 1 ]);
 			}
 		});
-		$( "#flt_price" ).html( "$" + $filter_selector.slider( "values", 0 ) + " - $" + $filter_selector.slider( "values", 1 ) );
+		$( "#flt_price" ).html( "$" + $filter_selector.slider( "values", 1 ) );
+		$('#price_filter').unbind('click');
+		$('#price_filter .ui-slider').unbind('click');
+		//$('#price_filter').unbind('mousedown');
 	});
 	
 	/*===================================*
@@ -987,9 +991,21 @@ PAGE JS
 
 	/*toggle js*/
 	$(function(){
-		$('.transcript-header, .togglebox, .mobile_toggle').click(function(){
+		$('.togglebox, .mobile_toggle').click(function(){
 			$(this).toggleClass('on');
-			$('.transcript-body, .toggle_text, .simple_text_reading .small_container').toggle();
+			$('.toggle_text, .simple_text_reading .small_container').toggle();
+		});
+	});
+	
+	$(function(){
+		$('.transcript-header').click(function(){
+			$(this).toggleClass('on');
+			$('.transcript-body').toggle();
+			if($(this).text() == 'Show Transcript'){
+			   $(this).text('Hide Transcript');
+			} else {
+			   $(this).text('Show Transcript');
+			}
 		});
 	});
 	

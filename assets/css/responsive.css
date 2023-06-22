@@ -752,6 +752,9 @@ div.banner_large_pad {
 body {
 	font-size:14px;
 }	
+.video_dec p, .video_dec ul li {
+	font-size:14px;
+}
 .h1, h1 {
     font-size: 32px;
 }

@@ -993,7 +993,7 @@ header .btn {
 	margin-bottom: 16px;
 }
 body .title_normal *{
-	font-weight:400;
+	font-weight:500;
 }
 .heading_s1  {
 	margin-bottom:32px
@@ -6826,6 +6826,7 @@ footer .widget_title {
 .filter_price .ui-slider .ui-slider-range {
 	background-color: #00B6AA;
 	border-radius: 0;
+	position:absolute;
 }
 .filter_price .ui-slider .ui-slider-handle {
 	cursor: pointer;
@@ -10166,4 +10167,175 @@ blockquote p:last-child {
 	color: #00B6AA;
 	margin-left: 5px;
 	vertical-align: middle;
+}
+
+.calculate_fees {
+	background-color:#FFF3C3;
+	padding:30px;
+	border-radius: 6px;
+	margin-bottom:15px;
+}
+.calculate_fees .heading_s1  p {
+	margin-bottom:0;
+}
+.calculate_investment {
+	background-color:#CFE9E6;
+	padding:30px;
+	border-radius: 6px;
+	margin-bottom:15px;
+}
+.calculate_years .form-group {
+	margin-bottom: 25px;
+}
+.calculate_years .form-group .chek-form {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+}
+.calculate_years .form-group .chek-form label {
+	color: #11274A;
+}
+.calculate_moreoption {
+	text-align: center;
+}
+.calculate_moreoption a {
+	text-decoration: underline;
+}
+
+.filter_price {
+	position: relative;
+	text-align: center;
+	display: block;
+}
+.filter_price .ui-slider .ui-slider-handle {
+	position:absolute;
+	cursor: pointer;
+	background-color: #fff;
+	border-radius: 100%;
+	border: 0;
+	height: 18px;
+	top: -8px;
+	width: 18px;
+	margin: 0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.calculate_investment .filter_price .ui-slider span.ui-slider-handle:nth-child(2) {
+	display: none !important;
+}
+.calculate_investment .filter_price .ui-widget.ui-widget-content {
+	position:relative;
+	background: #FFFFFF;
+	box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.05);
+	border-radius: 12px;
+	height:35px;
+}
+.calculate_investment .filter_price .ui-slider .ui-slider-range {
+	border-radius: 12px;
+}
+.calculate_investment .filter_price .ui-slider .ui-slider-handle {
+	position: absolute;
+	cursor: pointer;
+	background-color: #fff;
+	height: 38px;
+	top: -3px;
+	width: 38px;
+	background: #FFFFFF;
+	box-shadow: -3px 4px 12px rgba(0, 0, 0, 0.25);
+	margin-left: -20px;
+	border: 1px solid #C0C0C0;
+}
+.calculate_investment .filter_price .ui-slider .ui-slider-handle:after {
+	content: "\f10a";
+	font-family: "Ionicons";
+	margin: 2px;
+	line-height: 36px;
+}
+.calculate_investment .filter_price .ui-slider .ui-slider-handle:before {
+	content: "\f107";
+	font-family: "Ionicons";
+	margin: 2px;
+	line-height: 36px;
+}
+.calculate_investment .filter_price .price_range {
+	margin-bottom:30px;
+}
+.calculate_investment .filter_price .price_range #flt_price {
+	font-size:52px;
+	background: #FFFFFF;
+	color: #11274A;
+	padding:10px 25px;
+	box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	line-height: normal;
+	display: inline-block;
+	font-weight:500;
+}
+.calculate_investment .filter_price #price_filter {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#price_filter { pointer-events: none; }
+/* Enable pointer events for slider handle only */
+#price_filter .ui-slider-handle { pointer-events: auto; }
+
+.expected_yearly_fee {
+	background-color:#B3AFD4;
+	padding:30px;
+	border-radius: 6px;
+	margin-bottom:15px;
+	margin-bottom:25px;
+}
+.expected_yearly_fee .yearly_fee {
+	background: #FFFFFF;
+	box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	padding: 10px 25px;
+	font-size: 52px;
+	line-height: normal;
+	margin-left: 20px;
+	max-width: 330px;
+	width: 100%;
+	text-align: center;
+}
+
+.expected_yearly_fee .yearly_breakdown {
+	display: -ms-flexbox ;
+	display: flex ;
+	-ms-flex-pack: space-between;
+	justify-content: space-between;
+	-ms-flex-align: center ;
+	align-items: center ;
+	width: 100%;
+	margin-left: 20px;
+}
+.expected_yearly_fee .yearly_breakdown > div{
+	padding: 20px 15px;
+	font-size:20px;
+	width: 100%;
+	text-align:center;
+}
+.yearly_breakdown .breakdown_admin {
+	background-color: #FBE8BE;
+}
+.yearly_breakdown .breakdown_invest {
+	background-color: #FCE865;
+}
+.yearly_breakdown .breakdown_trans {
+	background-color: #FCC900;
+}
+.yearly_breakdown .breakdown_perf {
+	background-color: #FEE789;
+}
+.yearly_breakdown .breakdown_res {
+	background-color: #FBFFE6;
+}
+
+.video_dec .heading_s1  {
+	margin-bottom:20px;
+}
+.video_dec p, .video_dec ul li {
+	font-size:18px;
 }

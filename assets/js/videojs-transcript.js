@@ -338,7 +338,7 @@ var widget = function (plugin) {
   };
   var createTitle = function () {
     var header = utils.createEl('header', '-header');
-    header.textContent = utils.localize('Transcript');
+    header.textContent = utils.localize('Show Transcript');
     return header;
   };
   var createSelector = function (){
