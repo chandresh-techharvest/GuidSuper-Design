@@ -2977,7 +2977,6 @@ input.text {
 .bottom_align_card .card_content {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	flex: 1;
 	padding: 30px 25px;
 }
@@ -5939,7 +5938,8 @@ footer .widget_title {
 	padding-top: 0;
 	font-weight: 700;
 }
-.accordion.accordion_style1 .card-body p {
+.accordion.accordion_style1 .card-body p,
+.accordion.accordion_style1 .card-body ul li {
 	font-size:14px;
 }
 .accordion.accordion_style1 .card-body p a {
@@ -10201,6 +10201,9 @@ blockquote p:last-child {
 .calculate_moreoption {
 	text-align: center;
 }
+.calculate_moreoption .heading_s1 {
+	margin-bottom: 15px;
+}
 .calculate_moreoption a {
 	text-decoration: underline;
 }
@@ -10223,9 +10226,10 @@ blockquote p:last-child {
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .calculate_investment .filter_price .ui-slider span.ui-slider-handle:nth-child(2) {
-	display: none !important;
+	/*display: none !important;*/
 }
 .calculate_investment .filter_price .ui-widget.ui-widget-content {
+	display:block;
 	position:relative;
 	background: #FFFFFF;
 	box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.05);
@@ -10262,7 +10266,8 @@ blockquote p:last-child {
 .calculate_investment .filter_price .price_range {
 	margin-bottom:30px;
 }
-.calculate_investment .filter_price .price_range #flt_price {
+.calculate_investment .filter_price .price_range #flt_price,
+.calculate_investment .filter_price .price_range #inputbox {
 	font-size:52px;
 	background: #FFFFFF;
 	color: #11274A;
@@ -10272,8 +10277,25 @@ blockquote p:last-child {
 	line-height: normal;
 	display: inline-block;
 	font-weight:500;
+	max-width: 270px;
+	border: 0;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-left: 50px;
 }
-.calculate_investment .filter_price #price_filter {
+.calculate_investment .filter_price .price_range .price_input_box {
+	position:relative;
+	max-width: 270px;
+	margin:0 auto;
+}
+.price_input_box .price_sign {
+	position: absolute;
+	font-size: 52px;
+	margin-top: 8px;
+	left: 15px;
+}
+.calculate_investment .filter_price #price_filter,
+.calculate_investment .filter_price #slider {
 	max-width: 500px;
 	margin: 0 auto;
 }
@@ -10300,6 +10322,14 @@ blockquote p:last-child {
 	width: 100%;
 	text-align: center;
 }
+.expected_yearly_fee .expected_yearly_fee_inner {
+	display: -ms-flexbox ;
+	display: flex ;
+	-ms-flex-pack: justify ;
+	justify-content: space-between ;
+	-ms-flex-align: center ;
+	align-items: center ;
+}
 
 .expected_yearly_fee .yearly_breakdown {
 	display: -ms-flexbox ;
@@ -10316,6 +10346,12 @@ blockquote p:last-child {
 	font-size:20px;
 	width: 100%;
 	text-align:center;
+}
+.expected_yearly_fee .breakdown_box {
+	display: -ms-flexbox ;
+	display: flex ;
+	-ms-flex-align: center ;
+	align-items: center ;
 }
 .yearly_breakdown .breakdown_admin {
 	background-color: #FBE8BE;

@@ -26,8 +26,32 @@
 }
 .main_menu_size_16 .navbar .navbar-nav > li > .nav-link, .dd_menu_size_16 .navbar .navbar-nav .dropdown-item, .dd_menu_size_16 .cart_list a {
 	font-size: 14px;
-	border-bottom: 1px solid rgba(209, 211, 212, 0.5);
+	border-bottom: 0px solid rgba(209, 211, 212, 0.5);
 }
+.mega-menu-col.header_banner_wrap {
+	max-width: 100%;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	padding:0;
+}
+.header_banner_wrap .header_banner {
+	padding-top: 0;
+}
+.header_banner_wrap .header_banner .col-12 {
+	padding: 0;
+}
+.header_banner .header_banner_content {
+	padding: 30px;
+	justify-content: space-between;
+}
+.header_banner .header_banner_content .cta_text h5 {
+	margin-bottom:0;	
+}
+.mega-menu-col > ul {
+	padding-bottom:15px;
+}
+
+
 .navbar .navbar-nav.attr-nav li .nav-link.search_trigger {
 	border:0;
 }
@@ -90,10 +114,10 @@ header .search_trigger {
 .banner_section.slide_medium .carousel-item,
 .banner_section.slide_medium .banner_content_wrap, 
 .banner_section.slide_medium .banner_content_wrap .carousel-item {
-	/*height: 400px;*/
+	height: 610px;
 }
 .banner_section.slide_small {
-	/*height: 500px;*/
+	height: 500px;
 }
 .banner_content h2 {
 	font-size: 52px;
@@ -376,7 +400,7 @@ header .search_trigger {
 .md-height-300 {
 	height: 300px !important;
 }
-.bottom-header {
+.bottom-header .navbar{
 	padding:15px 0;
 }
 .heading_s1, .heading_s4 {
@@ -770,7 +794,7 @@ body {
 .top-header,.top-header .header_list {
 	display: none;
 }
-.bottom-header {
+.bottom-header .navbar{
 	padding:15px 0;
 }
 .bottom-header .navbar-brand {
@@ -1182,6 +1206,47 @@ footer .widget_title {
 	transition: all ease .5s; 
 } 
 
+.calculate_years .form-group .chek-form {
+	display:block;
+}
+.calculate_years .form-group .chek-form .custome-radio.form-check-inline {
+	margin-right: 0;
+	display: inline-block;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	width: 100%;
+}
+.expected_yearly_fee .breakdown_box {
+	display:block;
+}
+.expected_yearly_fee .breakdown_box h4 {
+	text-align:center;
+	margin-bottom:15px;
+}
+.expected_yearly_fee .yearly_breakdown {
+	display:block;
+	margin:0;	
+}
+.expected_yearly_fee .yearly_breakdown > div {
+	padding: 20px 40px;
+	width: auto;
+	text-align: center;
+	display: inline-block;
+	clear: both;
+	float: left;
+}
+.expected_yearly_fee .expected_yearly_fee_inner {
+	display: block;
+	text-align: center;
+}
+.expected_yearly_fee .yearly_fee {
+	width: auto;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.calculate_investment .filter_price .price_range #flt_price, .calculate_investment .filter_price .price_range #inputbox, .price_input_box .price_sign {
+	font-size: 48px;
+}
 .footer_top .mobile_toogle .widget_links {
 	height: 0;
 	display: none;
@@ -1291,6 +1356,10 @@ footer .footer_bottom .widget {
   max-width: 575px
 ---------------------------------------------------*/
 @media only screen and (max-width: 575px) {
+.sticky_dark_skin.nav-fixed.header_wrap .navbar .navbar-collapse .navbar-nav:not([class*="bg_"]):not([class*="bg-"]),
+.dark_skin.header_wrap .navbar .navbar-collapse:not([class*="bg_"]):not([class*="bg-"]) {
+	height:100vh;
+}
 .header_wrap .navbar-collapse {
 	left: -15px;
 	right: -15px;

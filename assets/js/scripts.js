@@ -467,10 +467,11 @@ PAGE JS
 	$(document).on("ready", function() {
 		$('.articles_slider').owlCarousel({
 			loop:false,
-			nav:false,
+			nav:true,
 			dots:false,
 			margin:20,
 			responsiveClass:true,
+			navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
 			responsive:{
 				0:{
                     items:1,
@@ -763,27 +764,37 @@ PAGE JS
 	 /*===================================*
 	24. PRICE FILTER JS
 	*===================================*/
-	$('#price_filter').each( function() {
-		var sliding = false;
-		var $filter_selector = $(this);
-		var a = $filter_selector.data("min-value");
-		var b = $filter_selector.data("max-value");
-		$filter_selector.slider({
-			range: true,
-			min: $filter_selector.data("min"),
-			max: $filter_selector.data("max"),
-			values: [ a, b ],
+
+	$(document).ready(function(){
+		if ($('#inputbox').length) {
+		  $("#inputbox").val(50000);
+		  $( "#slider" ).slider({
+			range: "min",
+			value: 50000,
+			min: 0,
+			max: 1000000,
 			slide: function( event, ui ) {
-				$( "#flt_price" ).html( "$" + ui.values[ 1 ] );
-				//$( "#price_first" ).val(ui.values[ 0 ]);
-				$( "#price_second" ).val(ui.values[ 1 ]);
+			  var value = $( "#slider" ).slider( "option", "value" );
+			  //on slide update inputbox
+			  $('#inputbox').val( value);
+			  
+			   //whatever other tasks you need to do.
 			}
-		});
-		$( "#flt_price" ).html( "$" + $filter_selector.slider( "values", 1 ) );
-		$('#price_filter').unbind('click');
-		$('#price_filter .ui-slider').unbind('click');
-		//$('#price_filter').unbind('mousedown');
+		  });
+	  
+		  $("#inputbox").keyup( function(){
+			
+			 //whatever other tasks you need to do.
+			
+			$( "#slider" ).slider( "option", "value", parseInt($(this).val()) );
+			
+			//whatever other tasks you need to do.
+			
+		  });
+		}
 	});
+	
+	
 	
 	/*===================================*
 	25. RATING STAR JS
@@ -1057,6 +1068,7 @@ PAGE JS
 			  window.location.href=$(this).val();
 			});
 			$('>li a', this).each(function(){
+			  
 			  var option=$(document.createElement('option'))
 			   .appendTo(select)
 			   .val(this.href)
