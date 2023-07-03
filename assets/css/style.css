@@ -1649,7 +1649,7 @@ body .title_normal *{
 }
 .search_open {
 	overflow-y: hidden;
-	padding-right: 17px;
+	padding-right: 0px;
 }
 .search_wrap.open {
 	top: 0;
@@ -10374,4 +10374,9 @@ blockquote p:last-child {
 }
 .video_dec p, .video_dec ul li {
 	font-size:18px;
+}
+
+.login-wrapper ul {
+	display:inline-block;
+	vertical-align:middle;
 }
