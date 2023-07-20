@@ -3652,7 +3652,14 @@ input.text {
 /*===================================*
   06.START LIST STYLE
 *===================================*/
-.list_style ul{
+.list_style ol{
+	padding: 0px 0px 0px 28px;
+	margin-bottom: 20px;
+}
+.list_style ol li {
+	padding: 5px 0px 5px 5px;
+}
+.list_style ul {
 	padding: 0px 0px 0px 20px;
 	margin-bottom: 20px;
 }
