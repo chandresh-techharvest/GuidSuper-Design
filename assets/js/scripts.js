@@ -465,37 +465,39 @@ PAGE JS
 	}
 	
 	$(document).on("ready", function() {
-		$('.articles_slider').owlCarousel({
-			loop:false,
-			nav:true,
-			dots:false,
-			margin:20,
-			responsiveClass:true,
-			navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
-			responsive:{
-				0:{
-                    items:1,
-					loop:true,	
-                    stagePadding:60
-                },
-				540:{
-                    items:1,
-					loop:true,
-                    stagePadding:100
-                },
-                767:{
-                    items:1,
-					loop:true,
-					stagePadding:110
-                },
-                768:{
-                    items:3,
-                },
-                992:{
-                    items:4,
-                }
-			}
-		})
+		if ($(".articles_slider").length > 0){
+			$('.articles_slider').owlCarousel({
+				loop:false,
+				nav:true,
+				dots:false,
+				margin:20,
+				responsiveClass:true,
+				navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
+				responsive:{
+					0:{
+						items:1,
+						loop:true,	
+						stagePadding:60
+					},
+					540:{
+						items:1,
+						loop:true,
+						stagePadding:100
+					},
+					767:{
+						items:1,
+						loop:true,
+						stagePadding:110
+					},
+					768:{
+						items:3,
+					},
+					992:{
+						items:4,
+					}
+				}
+			})
+		}
 	});
 	
 	$(document).on("ready", function() {
