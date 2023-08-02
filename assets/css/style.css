@@ -988,7 +988,7 @@ header .btn {
 .heading_s1 h1, .heading_s1 h2, .heading_s1 h3, .heading_s1 h4, .heading_s1 h5, .heading_s1 h6 {
 	font-weight: 700;
 	margin: 0;
-	text-transform: capitalize;
+/*	text-transform: capitalize;*/
 	line-height: 40px;
 	margin-bottom: 16px;
 }
