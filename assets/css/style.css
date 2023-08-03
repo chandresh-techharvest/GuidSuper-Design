@@ -9757,6 +9757,12 @@ blockquote p:last-child {
 	color:#6661AB;
 	text-align: right;
 }
+.table_left .table tbody tr td:last-child {
+	text-align:left;
+}
+.table_padding .table tbody tr td{
+	padding: .75rem;
+}
 
 /*doc css*/
 .doc_box {
