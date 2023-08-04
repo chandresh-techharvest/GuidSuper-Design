@@ -9988,6 +9988,7 @@ blockquote p:last-child {
 .back_link a {
 	font-size: 14px;
 	color: #8893A4;
+	margin-right: 25px;
 }
 .back_link a i {
 	color: #00B6AA;
