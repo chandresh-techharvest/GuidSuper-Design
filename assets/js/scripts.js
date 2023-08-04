@@ -78,6 +78,8 @@ PAGE JS
 
 	});
 	
+
+	
 	//Show Hide dropdown-menu Main navigation 
 	$( document ).on('ready', function () {
 		$( '.dropdown-menu a.dropdown-toggler' ).on( 'click', function () {
@@ -98,6 +100,18 @@ PAGE JS
 			return false;
 		});
 	});
+	
+	//Show Hide dropdown-menu Main navigation 
+	$('.dropdown').on('show.bs.dropdown', function () {
+		$(this).addClass('show');
+	});
+	
+	$('.dropdown').on('hide.bs.dropdown', function () {
+		$(this).removeClass('show');
+	});
+
+
+
 	
 	//Hide Navbar Dropdown After Click On Links
 	var navBar = $(".header_wrap");
@@ -377,7 +391,7 @@ PAGE JS
 	});
 	
 	$( window ).on( "load", function() {
-		grid_selectors()
+		grid_selectors();
 	});
 	
 		/*load more button*/
@@ -405,7 +419,7 @@ PAGE JS
 			$('.load_more_wrap').append("<span class='alert alert-info'>" + message + "</span>");
 		}
 	
-		grid_selectors()
+		grid_selectors();
 
 	});
 
@@ -496,7 +510,7 @@ PAGE JS
 						items:4,
 					}
 				}
-			})
+			});
 		}
 	});
 	
@@ -695,9 +709,11 @@ PAGE JS
 	21. TOOLTIP JS
 	*===================================*/
 	$(function () {
-		$('[data-toggle="tooltip"]').tooltip({
-			trigger: 'hover',
-		});
+		if ($('[data-toggle="tooltip"]').length > 0){
+			$('[data-toggle="tooltip"]').tooltip({
+				trigger: 'hover',
+			});
+		}
 	});
 	$(function () {
 		$('[data-toggle="popover"]').popover();
@@ -1022,16 +1038,12 @@ PAGE JS
 		});
 	});
 	
-	/*tooltip js*/
-	$(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
-	})
 
 	/*toggle switch js*/
 	$(document).ready(function() {
 		$(".ToggleSwitch").on("change", function () {
 			ToggleSwitch(this);
-		})
+		});
 	});
 	function ToggleSwitch(ele) {
 		if($(ele).prop("checked") == true){
@@ -1185,14 +1197,14 @@ PAGE JS
 	  }
 	
 	  $('.accept-cookies').on('click', function() {
-		document.cookie = "accepted_cookies=yes;"
+		document.cookie = "accepted_cookies=yes;";
 		$('.cookie-overlay').removeClass('d-block').addClass('d-none');
-	  })
+	  });
 	
 	  // expand depending on your needs
 	  $('.close-cookies').on('click', function() {
 		$('.cookie-overlay').removeClass('d-block').addClass('d-none');
-	  })
-	})
+	  });
+	});
 		
 })(jQuery);

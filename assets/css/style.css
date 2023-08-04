@@ -1416,6 +1416,10 @@ body .title_normal *{
 	width: auto;
 	font-weight: 100;
 }
+.navbar .navbar-nav li.dropdown .nav-link .dropdown-toggle {
+	padding-left: 5px;
+	cursor: pointer;
+}
 .dropdown.show .dropdown-toggle::after {
     -moz-transform: rotate(-180deg);
 	-webkit-transform: rotate(-180deg);
@@ -1430,6 +1434,9 @@ body .title_normal *{
 	position: absolute;
 	right: 15px;
 	top: 10px;
+}
+li.dropdown.show > .dropdown-menu {
+	display: block;
 }
 .navbar .navbar-nav > li > .nav-link {
 	font-weight: 500;
