@@ -4812,7 +4812,7 @@ footer .widget {
 	margin-bottom: 30px;
 }
 footer .widget_title {
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	margin-top: 10px;
 	margin-bottom: 15px;
 	font-size: 16px;
@@ -7567,7 +7567,6 @@ select option {
 }
 .widget_title {
 	margin-bottom: 25px;
-	text-transform: capitalize;
 	font-weight: 600;
 	letter-spacing: 0.3px;
 }
