@@ -435,7 +435,8 @@ header .search_trigger {
 }
 .navbar .navbar-nav > li > .nav-link,
 .nav-fixed .navbar .navbar-nav > li > .nav-link {
-	padding: 15px 20px;
+	padding: 23px 16px;
+	line-height:normal;
 }
 .navbar .navbar-nav.attr-nav li {
 	float: left;
@@ -497,7 +498,7 @@ header .search_trigger {
 	padding: 0;
 }
 .dropdown-menu .dropdown-toggler::after {
-	right: 0px;
+	/*right: 0px;*/
 }
 .navbar .navbar-nav li ul > li.mega-menu-col {
 	border:0;
@@ -511,6 +512,7 @@ header .search_trigger {
 }
 .main_menu_size_16 .navbar .navbar-nav > li > .nav-link, .dd_menu_size_16 .navbar .navbar-nav .dropdown-item, .dd_menu_size_16 .cart_list a {
 	font-size: 16px;
+	border-bottom: 1px solid rgba(209, 211, 212, 0.5);
 }
 .search_wrap {
 	max-width: 100%;
@@ -518,11 +520,14 @@ header .search_trigger {
 }
 .dropdown-toggle::after {
 	float: right;
+	font-size:22px;
+	padding-left:8px;
+	padding-right: 8px;
 }
 .navbar-nav > li > .dropdown-menu, 
 .navbar .navbar-nav li.dropdown-mega-menu .dropdown-menu {
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 .mega-menu-col {
 	padding: 0px;
@@ -541,7 +546,7 @@ header .search_trigger {
 	display: inline-block;
 }
 .navbar .navbar-nav .dropdown-item {
-	padding: 14px 20px;
+	padding: 20px 20px;
 	border-bottom: 1px solid rgba(209, 211, 212, 0.5);
 }
 .navbar .navbar-nav .dropdown-header {
@@ -795,7 +800,23 @@ body {
 	display: none;
 }
 .bottom-header .navbar{
-	padding:15px 0;
+	padding:16px 0;
+}
+.navbar .navbar-nav .mega-menu .dropdown-item span.menu_icon {
+	margin-right: 12px;
+}
+.mobile_menu {
+	padding-top: 12px;
+	padding-bottom:12px;
+}
+.mobile_menu .header_list > li {
+	padding: 0;
+}
+.mobile_menu .header_list > li a {
+	padding: 10px 16px;
+}
+.mobile_menu .header_list > li img {
+	padding-right: 12px;
 }
 .bottom-header .navbar-brand {
 	padding:0;
@@ -1359,6 +1380,9 @@ footer .footer_bottom .widget {
 .sticky_dark_skin.nav-fixed.header_wrap .navbar .navbar-collapse .navbar-nav:not([class*="bg_"]):not([class*="bg-"]),
 .dark_skin.header_wrap .navbar .navbar-collapse:not([class*="bg_"]):not([class*="bg-"]) {
 	height:100vh;
+}
+.sticky_dark_skin.nav-fixed.header_wrap .navbar .navbar-collapse .navbar-nav:not([class*="bg_"]):not([class*="bg-"]), .dark_skin.header_wrap .navbar .navbar-collapse:not([class*="bg_"]):not([class*="bg-"]) {
+	border:0;
 }
 .header_wrap .navbar-collapse {
 	left: -15px;

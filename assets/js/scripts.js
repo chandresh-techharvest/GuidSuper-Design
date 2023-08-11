@@ -78,7 +78,6 @@ PAGE JS
 
 	});
 	
-
 	
 	//Show Hide dropdown-menu Main navigation 
 	$( document ).on('ready', function () {
@@ -99,32 +98,44 @@ PAGE JS
 			
 			return false;
 		});
+		
 	});
 	
-	//Show Hide dropdown-menu Main navigation 
-	$('.dropdown').on('show.bs.dropdown', function () {
-		$(this).addClass('show');
-	});
-	
-	$('.dropdown').on('hide.bs.dropdown', function () {
-		$(this).removeClass('show');
-	});
-	
+
 	// Show dropdown on hover
-$('.dropdown').mouseover(function () {
-    if($('.navbar-toggler').is(':hidden')) {
-        $(this).addClass('show').attr('aria-expanded', 'true');
-        $(this).find('.dropdown-menu').addClass('show');
-    }
-}).mouseout(function () {
-    if($('.navbar-toggler').is(':hidden')) {
-        $(this).removeClass('show').attr('aria-expanded', 'false');
-        $(this).find('.dropdown-menu').removeClass('show');
-    }
-});
+	$('.dropdown').mouseover(function () {
+		if($('.navbar-toggler').is(':hidden')) {
+			$(this).addClass('show').attr('aria-expanded', 'true');
+			$(this).find('.dropdown-menu').addClass('show');
+		}
+	}).mouseout(function () {
+		if($('.navbar-toggler').is(':hidden')) {
+			$(this).removeClass('show').attr('aria-expanded', 'false');
+			$(this).find('.dropdown-menu').removeClass('show');
+		}
+	});
+	
 
+	
+	$(document).ready(function() {
 
-
+		$( ".dropdown" ).click(function(event) {
+			// stop bootstrap.js to hide the parents
+			event.stopPropagation();
+			if ( !$( this ).hasClass( 'show' ) ) {
+				$( this ).parents().first().find( '.show' ).removeClass( "show" );
+			}
+			// hide the open children
+			$( this ).find(".dropdown").removeClass('show');
+			// add 'open' class to all parents with class 'dropdown-submenu'
+			$( this ).parents(".dropdown").addClass('show');
+			// this is also open (or was)
+			$( this ).toggleClass('show');
+		});
+		
+	});
+	
+	
 	
 	//Hide Navbar Dropdown After Click On Links
 	var navBar = $(".header_wrap");

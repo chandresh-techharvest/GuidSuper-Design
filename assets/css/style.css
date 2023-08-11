@@ -1419,6 +1419,7 @@ body .title_normal *{
 .navbar .navbar-nav li.dropdown .nav-link .dropdown-toggle {
 	padding-left: 5px;
 	cursor: pointer;
+	float:right;
 }
 .dropdown.show .dropdown-toggle::after {
     -moz-transform: rotate(-180deg);
@@ -1433,7 +1434,7 @@ body .title_normal *{
 .dropdown-menu .dropdown-toggler::after {
 	position: absolute;
 	right: 15px;
-	top: 10px;
+	/*top: 10px;*/
 }
 li.dropdown.show > .dropdown-menu {
 	display: block;
@@ -2100,7 +2101,7 @@ body header .cart_count {
 }
 .navbar-toggler[aria-expanded="true"] span::before {
     content: "\f129";
-    font-size: 16px;
+    font-size: 20px;
 }
 .navbar-toggler[aria-expanded="true"] {
 	line-height: 32px;
