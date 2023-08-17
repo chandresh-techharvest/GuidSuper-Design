@@ -1292,6 +1292,9 @@ body .title_normal *{
 	vertical-align: top;
 	margin: 0;
 }
+.navbar-brand .navbar-brand {
+	padding:0;
+}
 .dark_skin .logo_light, .dark_skin .logo_default,
 .light_skin .logo_default, .light_skin .logo_dark,
 .logo_light,.logo_dark {
