@@ -10403,3 +10403,11 @@ blockquote p:last-child {
 	display:inline-block;
 	vertical-align:middle;
 }
+
+.text-primary {
+	color: #00B6AA !important;
+}
+a.text-primary:hover {
+	color: #00B6AA !important;
+	text-decoration:underline;
+}
