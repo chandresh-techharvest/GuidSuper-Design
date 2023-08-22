@@ -237,8 +237,8 @@ header .search_trigger {
 	display: block;
 	opacity: 0;
 	visibility: hidden;
-	transition: all 0.1s ease-in-out;
-	margin-top: 20px;
+	transition: all 0.3s ease-in-out;
+	margin-top: 0px;
 }
 .navbar .navbar-nav li.dropdown.show > .dropdown-menu,
  .navbar .navbar-nav li.dropdown.show li:hover > .dropdown-menu {
