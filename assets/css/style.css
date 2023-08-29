@@ -9966,6 +9966,7 @@ blockquote p:last-child {
 .blog_list .post_img {
 	margin: 0;
 	max-width: 100px;
+	min-width: 100px;
 	width: 100%;
 }
 .blog_list .post_img img {
