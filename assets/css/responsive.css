@@ -1373,6 +1373,12 @@ footer .footer_bottom .widget {
 
 }
 
+@media only screen and (min-width: 480px) {
+    .mobile_view {
+        display:none !important;
+    }
+}
+
 /* -------------------------------------------------
   max-width: 575px
 ---------------------------------------------------*/
@@ -2095,8 +2101,21 @@ footer .widget_title,
 	font-size:12px;
 }
 
-
 }
+
+
+/* -------------------------------------------------
+  max-width: 479px
+---------------------------------------------------*/
+@media only screen and (max-width: 479px) {
+    .desktop_view {
+        display: none !important;
+    }
+    .mobile_view {
+        display: block !important;
+    }
+}
+
 
 /* -------------------------------------------------
   max-width: 440px
