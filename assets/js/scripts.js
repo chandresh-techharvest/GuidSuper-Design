@@ -87,7 +87,7 @@ PAGE JS
 			if ( !$( this ).next().hasClass( 'show' ) ) {
 				$( this ).parents( '.dropdown-menu' ).first().find( '.show' ).removeClass( "show" );
 			}
-			var $subMenu = $( this ).next( ".dropdown-menu" );
+			var $subMenu = $( this ).next( ".dropdown-menu:not(.search_filter .dropdown-menu )" );
 			$subMenu.toggleClass( 'show' );
 			
 			$( this ).parent( "li" ).toggleClass( 'show' );
@@ -103,7 +103,7 @@ PAGE JS
 	
 
 	// Show dropdown on hover
-	$('.dropdown').mouseover(function () {
+	$('.dropdown:not(.search_filter)').mouseover(function () {
 		if($('.navbar-toggler').is(':hidden')) {
 			$(this).addClass('show').attr('aria-expanded', 'true');
 			$(this).find('.dropdown-menu').addClass('show');
@@ -119,16 +119,16 @@ PAGE JS
 	
 	$(document).ready(function() {
 
-		$( ".dropdown" ).click(function(event) {
+		$( ".dropdown:not(.search_filter)" ).click(function(event) {
 			// stop bootstrap.js to hide the parents
 			event.stopPropagation();
 			if ( !$( this ).hasClass( 'show' ) ) {
 				$( this ).parents().first().find( '.show' ).removeClass( "show" );
 			}
 			// hide the open children
-			$( this ).find(".dropdown").removeClass('show');
+			$( this ).find(".dropdown:not(.search_filter").removeClass('show');
 			// add 'open' class to all parents with class 'dropdown-submenu'
-			$( this ).parents(".dropdown").addClass('show');
+			$( this ).parents(".dropdown:not(.search_filter").addClass('show');
 			// this is also open (or was)
 			$( this ).toggleClass('show');
 		});

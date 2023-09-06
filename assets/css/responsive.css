@@ -386,6 +386,12 @@ header .search_trigger {
 	-webkit-filter: blur(0);
 	filter: blur(0);
 }
+
+ul.ui-widget.ui-autocomplete.ui-front {
+	width:100% !important;
+	max-width:800px;
+}
+
 }
 /* -------------------------------------------------
   max-width: 991px
@@ -712,6 +718,10 @@ div.banner_large_pad {
 .contact_form {
 	max-width: 400px;
 }
+ul.ui-widget.ui-autocomplete.ui-front {
+	margin-right: 60px;
+}
+
 }
 /* -------------------------------------------------
   min-width: 768px
