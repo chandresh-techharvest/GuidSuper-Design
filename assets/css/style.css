@@ -2217,6 +2217,9 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	padding: 15px;
 	height: 100%;
 }
+.mega-menu .header_banner_wrap {
+	padding:0;
+}
 .header_banner {
 	height: 100%;
 	display: -ms-flexbox;
