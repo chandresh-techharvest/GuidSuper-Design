@@ -10444,3 +10444,18 @@ ul.ui-widget.ui-autocomplete.ui-front {
 ul.ui-widget.ui-autocomplete.ui-front li.ui-menu-item > div {
 	padding: 8px 15px;
 }
+
+.btn-check {
+	position: absolute;
+	clip: rect(0,0,0,0);
+	pointer-events: none;
+}
+.btn-check:checked + .btn {
+  color: #fff !important;
+  background-color: #11274A;
+  border-color: #11274A;
+}
+.useful_box .useful_wrap {
+	display: inline-block;
+}
+#otherAnswer {margin-left:10px; padding:6px 8px }

@@ -1231,4 +1231,20 @@ PAGE JS
 	  });
 	});
 		
+
+	$("input:radio[name=useful]").change(function(){
+	   
+		if($(this).val()=="no")
+		{
+			$("#otherAnswer").show();
+			$(".useful_wrap").addClass('d-none');
+		}
+		else
+		{
+			$("#otherAnswer").show(); 
+			$(".useful_wrap").addClass('d-none');
+		}
+		
+	});
+		
 })(jQuery);

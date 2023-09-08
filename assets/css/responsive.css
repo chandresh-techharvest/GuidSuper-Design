@@ -391,6 +391,11 @@ ul.ui-widget.ui-autocomplete.ui-front {
 	width:100% !important;
 	max-width:800px;
 }
+.navbar .navbar-nav li.dropdown > .dropdown-menu .mega-menu ul li {
+	/* min-height: 145px; */
+	max-height: 145px;
+	overflow: hidden;
+}
 
 }
 /* -------------------------------------------------

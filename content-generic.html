@@ -654,8 +654,14 @@
         	<div class="col-md-12">
             	<div class="useful_box">
 					<span> Did you find this page useful? </span>
-                    <a href="#" class="btn btn-line-fill btn-sm"> YES </a>
-                    <a href="#" class="btn btn-line-fill btn-sm"> NO </a>
+                    <div class="useful_wrap" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="useful" id="yes" autocomplete="off" value="yes">
+						<label class="btn btn-line-fill btn-sm" for="yes"> YES </label>
+                    
+						<input type="radio" class="btn-check" name="useful" id="no" autocomplete="off" value="no">
+						<label class="btn btn-line-fill btn-sm" for="no">NO</label>
+                    </div>
+                    <span id="otherAnswer" class="alert alert-success" style="display:none;"> Thank  you for submitting your feedback </span>
                 </div>
             </div>
         </div>
