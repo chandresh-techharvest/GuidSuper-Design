@@ -1455,9 +1455,10 @@ li.dropdown.show > .dropdown-menu {
 }
 .navbar .navbar-nav > li > .nav-link {
 	font-weight: 500;
-	padding: 22px 12px;
+	padding: 22px 0px;
 	/*text-transform: capitalize;*/
 	font-size: 14px;
+	margin-left:24px;
 }
 .nav-fixed .navbar .navbar-nav > li > .nav-link {
 	padding: 20px 10px;

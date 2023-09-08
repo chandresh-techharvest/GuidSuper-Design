@@ -443,6 +443,7 @@ ul.ui-widget.ui-autocomplete.ui-front {
 .nav-fixed .navbar .navbar-nav > li > .nav-link {
 	padding: 23px 16px;
 	line-height:normal;
+	margin-left:0;
 }
 .navbar .navbar-nav.attr-nav li {
 	float: left;
