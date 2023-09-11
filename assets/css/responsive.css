@@ -239,6 +239,7 @@ header .search_trigger {
 	visibility: hidden;
 	transition: none;
 	margin-top: 0px;
+	display:none;
 }
 .navbar .navbar-nav li.dropdown.show > .dropdown-menu,
  .navbar .navbar-nav li.dropdown.show li:hover > .dropdown-menu {
@@ -246,6 +247,7 @@ header .search_trigger {
 	opacity: 1;
 	visibility: visible;
 	margin-top: 0px;
+	display:block;
 }
 .navbar .navbar-nav li:hover > .dropdown-menu.cart_box {
 	-webkit-transform: scale(1);
@@ -443,6 +445,9 @@ ul.ui-widget.ui-autocomplete.ui-front {
 .navbar .navbar-collapse .navbar-nav {
 	max-height: 80vh;
 	overflow-y: auto;
+}
+.navbar .navbar-nav > li {
+	margin-left:0;
 }
 .navbar .navbar-nav > li > .nav-link,
 .nav-fixed .navbar .navbar-nav > li > .nav-link {
