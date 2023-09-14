@@ -812,13 +812,14 @@ PAGE JS
 		  $("#inputbox").val(50000);
 		  $( "#slider" ).slider({
 			range: "min",
-			value: 50000,
+			values: [50000],
 			min: 0,
-			max: 1000000,
+			max: 500000,
+			step: 2,
 			slide: function( event, ui ) {
 			  var value = $( "#slider" ).slider( "option", "value" );
 			  //on slide update inputbox
-			  $('#inputbox').val( value);
+			  $("#inputbox").val(ui.values[0]);
 			  
 			   //whatever other tasks you need to do.
 			}
