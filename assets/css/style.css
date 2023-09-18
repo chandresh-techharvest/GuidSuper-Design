@@ -9784,6 +9784,10 @@ blockquote p:last-child {
 	padding-right: 0;
 	border:0;
 }
+.table-bordered tbody tr td {
+	vertical-align:middle;
+	border:1px solid #dee2e6;
+}
 .table tbody tr td:last-child {
 	color:#6661AB;
 	text-align: right;
@@ -10462,3 +10466,15 @@ ul.ui-widget.ui-autocomplete.ui-front li.ui-menu-item > div {
 	display: inline-block;
 }
 #otherAnswer {margin-left:10px; padding:6px 8px }
+
+
+.upload-btn-wrapper .btn .form-label {
+	line-height: normal;
+	margin: 4px 0;
+}
+.upload-btn-wrapper .btn div.mb-2 {
+	margin-bottom: 0 !important;
+}
+.upload-btn-wrapper .btn:hover .form-label {
+	color: #fff;
+}
