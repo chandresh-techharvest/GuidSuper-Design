@@ -10478,3 +10478,7 @@ ul.ui-widget.ui-autocomplete.ui-front li.ui-menu-item > div {
 .upload-btn-wrapper .btn:hover .form-label {
 	color: #fff;
 }
+.upload-btn-wrapper input[type="file"] {
+	height: 0;
+	padding: 0;
+}
