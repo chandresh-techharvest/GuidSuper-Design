@@ -80,23 +80,21 @@ PAGE JS
 	
 	
 	//Show Hide dropdown-menu Main navigation 
-	$( document ).on('ready', function () {
-		$( '.dropdown-menu a.dropdown-toggler' ).on( 'click', function () {
-			//var $el = $( this );
-			//var $parent = $( this ).offsetParent( ".dropdown-menu" );
-			if ( !$( this ).next().hasClass( 'show' ) ) {
-				$( this ).parents( '.dropdown-menu' ).first().find( '.show' ).removeClass( "show" );
+
+	$(document).on('ready', function () {
+		$('.dropdown-menu a.dropdown-toggler').on('click', function () {
+			
+			if (!$(this).next().hasClass('show')) {
+				$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
 			}
-			var $subMenu = $( this ).next( ".dropdown-menu:not(.search_filter .dropdown-menu)" );
-			$subMenu.toggleClass( 'show' );
-			
-			$( this ).parent( "li" ).toggleClass( 'show' );
-	
-			$( this ).parents( 'li.nav-item.dropdown.show' ).on( 'hidden.bs.dropdown', function () {
-				$( '.dropdown-menu .show' ).removeClass( "show" );
-			} );
-			
+			var $subMenu = $(this).next(".dropdown-menu:not(.search_filter .dropdown-menu)");
+			$subMenu.toggleClass('show');
+			$(this).parent("li").toggleClass('show');
+			$(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function () {
+				$('.dropdown-menu .show').removeClass("show");
+			});
 			return false;
+
 		});
 		
 	});
@@ -126,9 +124,9 @@ PAGE JS
 				$( this ).parents().first().find( '.show' ).removeClass( "show" );
 			}
 			// hide the open children
-			$( this ).find(".dropdown").removeClass('show');
+			$(this).find(".dropdown").removeClass('show');
 			// add 'open' class to all parents with class 'dropdown-submenu'
-			$( this ).parents(".dropdown").addClass('show');
+			$(this).parents(".dropdown").addClass('show');
 			// this is also open (or was)
 			$( this ).toggleClass('show');
 		});
@@ -445,6 +443,25 @@ PAGE JS
 	
 		grid_selectors();
 
+	});
+
+	$("#newFilters").change(function () {
+		var posts = $("item");
+		var customType = $(this).val();
+		posts
+			.hide()
+			.filter(function () {
+				return $.trim($(this).data('filter')) === $.trim(customType);
+			})
+			.show();
+
+		if ($('.loadmore [class*="item-show"]').length > initShow) {
+
+		} else {
+			$("#load_more, .load_more").hide();
+		}
+
+		grid_selectors();
 	});
 
 	/*===================================*
@@ -806,7 +823,7 @@ PAGE JS
 	 /*===================================*
 	24. PRICE FILTER JS
 	*===================================*/
-
+	var stage = "";
 	$(document).ready(function(){
 		if ($('#inputbox').length) {
 		  $("#inputbox").val(50000);
@@ -816,26 +833,98 @@ PAGE JS
 			min: 0,
 			max: 500000,
 			step: 2,
-			slide: function( event, ui ) {
-			  var value = $( "#slider" ).slider( "option", "value" );
-			  //on slide update inputbox
-			  $("#inputbox").val(ui.values[0]);
-			  
+			  slide: function (event, ui) {
+				  
+				  //$('#inputbox').val(ui.values[0]);
+				  stage = $('input[name="radio"]:checked').val();
+				  var superAmount = ui.values[0]; //$("#slider").slider("option", "value");
+				  $('#inputbox').val(superAmount);
+				  if (superAmount != '') {
+					  Calculate(superAmount);
+				  }
 			   //whatever other tasks you need to do.
 			}
 		  });
-	  
+
 		  $("#inputbox").keyup( function(){
 			
 			 //whatever other tasks you need to do.
 			
 			$( "#slider" ).slider( "option", "value", parseInt($(this).val()) );
-			
-			//whatever other tasks you need to do.
+			  stage = $('input[name="radio"]:checked').val();
+			  if ($(this).val() != '') {
+				  var superAmount = parseInt($(this).val());
+				  console.log(superAmount);
+				  if (superAmount != '' && superAmount != NaN) {
+					  Calculate(superAmount);
+				  }
+			  }
+			  else {
+				  $(this).val(0);
+				  Calculate(0);
+			  }
 			
 		  });
+
+			$('input[type=radio][name=radio]').change(function () {
+				stage = $('input[name="radio"]:checked').val();
+				var superAmount = $("#inputbox").val();
+				if (superAmount != '') {
+					Calculate(superAmount);
+				}
+			});
+
 		}
 	});
+
+	/*=================================*
+	Calculator functions
+	*===================================*/
+
+	function Calculate(superAmount) {
+		switch (stage) {
+			case "Building":
+				var investment = (superAmount * (0.39 / 100));
+
+				$(".breakdown_invest").text("Invest. $" + Math.round(investment));
+				var admin = ((superAmount * (0.15 / 100)) + 115) > 800 ? 800 : (superAmount * (0.15 / 100)) + (superAmount * (0.02 / 100)) + 115;
+
+				$(".breakdown_admin").text("Admin $" + Math.round(admin));
+				var performance = (superAmount * (0 / 100));
+				$(".breakdown_perf").text("Perf. $" + Math.round(performance));
+				var transaction = (superAmount * (0.09 / 100));
+				$(".breakdown_trans").text("Trans. $" + Math.round(transaction));
+				var subtotal = Math.round(investment + admin + performance + transaction);
+
+				$(".yearly_fee").text("$ " + subtotal);
+				break;
+			case "Growing":
+				var investment = (superAmount * (0.51 / 100));
+				$(".breakdown_invest").text("Invest. $" + Math.round(investment));
+				var admin = ((superAmount * (0.15 / 100)) + 115) > 800 ? 800 : (superAmount * (0.15 / 100)) + (superAmount * (0.02 / 100)) + 115;
+				$(".breakdown_admin").text("Admin $" + Math.round(admin));
+				var performance = (superAmount * (0.07 / 100));
+				$(".breakdown_perf").text("Perf. $" + Math.round(performance));
+				var transaction = (superAmount * (0.02 / 100));
+				$(".breakdown_trans").text("Trans. $" + Math.round(transaction));
+				var subtotal = Math.round(investment + admin + performance + transaction);
+				$(".yearly_fee").text("$ " + subtotal);
+				break;
+			case "Consolidating":
+				var investment = (superAmount * (0.51 / 100));
+				$(".breakdown_invest").text("Invest. $" + Math.round(investment));
+				var admin = ((superAmount * (0.15 / 100)) + 115) > 800 ? 800 : (superAmount * (0.15 / 100)) + (superAmount * (0.02 / 100)) + 115;
+				$(".breakdown_admin").text("Admin $" + Math.round(admin));
+				var performance = (superAmount * (0.06 / 100));
+				$(".breakdown_perf").text("Perf. $" + Math.round(performance));
+				var transaction = (superAmount * (0.01 / 100));
+				$(".breakdown_trans").text("Trans. $" + Math.round(transaction));
+				var subtotal = Math.round(investment + admin + performance + transaction);
+				$(".yearly_fee").text("$ " + subtotal);
+
+				break;
+		}
+	}
 	
 	
 	
@@ -1170,13 +1259,10 @@ PAGE JS
 
 	/*Footer Toogle*/
 	$(document).ready(function(){
-		var accordionOpen = $('footer .mobile_toogle .widget_title'),
-				secondDepth = $('footer .mobile_toogle .widget_links');
-		
-		accordionOpen.on('click',function(){
-				accordionOpen.closest('footer .mobile_toogle').removeClass('on');
-				$(this).closest('footer .mobile_toogle').addClass('on');
-				
+		$("footer .mobile_toogle .widget_title").click(function() {
+		  const $this = $(this).parent();
+		  $this.parent().toggleClass("on");
+		  $this.parent().siblings().removeClass("on");
 		});
 	});
 	

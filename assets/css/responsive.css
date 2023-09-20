@@ -1293,11 +1293,12 @@ footer .widget_title {
 	height: 0;
 	display: none;
 }
-.footer_top .mobile_toogle.on .widget_links {
+.footer_top .mobile_toogle.on .widget_links,
+.footer_top [class*="col-"].on .mobile_toogle .widget_links {
 	height: auto;
 	display: block;
 }
-footer .footer_top .mobile_toogle.on .widget_links {
+footer .footer_top .mobile_toogle .widget_links {
 	padding-bottom: 15px;
 }
 .footer_top .mobile_toogle .widget_title:before {
@@ -1313,7 +1314,7 @@ footer .footer_top .mobile_toogle.on .widget_links {
 .footer_top .mobile_toogle.on .widget_title:before {
 	content: "\f126";
 }
-.footer_top .mobile_toogle.on .widget_links li a {
+.footer_top .mobile_toogle .widget_links li a {
 	text-decoration: underline;
 }
 footer .footer_top .widget .widget_title {
