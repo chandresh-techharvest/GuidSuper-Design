@@ -340,7 +340,7 @@ header .btn {
 .btn-fill-out-dark.btn-radius:after {
 	border-radius: 40px;
 }
-.btn-line-fill, .submit_button .btn {
+.btn-line-fill, .file_upload_btn label, .submit_button .btn {
 	border: 1px solid #11274A;
 	overflow: hidden;
 	position: relative;
@@ -354,6 +354,7 @@ header .btn {
 }
 
 .btn-line-fill:hover,
+.file_upload_btn label:hover,
 .submit_button .btn:hover {
 	color: #fff !important;
 }
@@ -388,6 +389,7 @@ header .btn {
   }
 }
 .btn-line-fill:before, .btn-line-fill:after,
+.file_upload_btn label:before, .file_upload_btn label:after,
 .submit_button .btn:before, .submit_button .btn:after {
 	position: absolute;
 	top: 50%;
@@ -399,6 +401,7 @@ header .btn {
 	z-index: -1;
 }
 .btn-line-fill:before,
+.file_upload_btn label:before,
 .submit_button .btn:before,
 .btn-fill-line:before {
 	left: -20px;
@@ -406,6 +409,7 @@ header .btn {
 	transform: translate(-50%, -50%);
 }
 .btn-line-fill:after,
+.file_upload_btn label:after,
 .submit_button .btn:after,
 .btn-fill-line:after {
 	right: -20px;
@@ -413,6 +417,7 @@ header .btn {
 	transform: translate(50%, -50%);
 }
 .btn-line-fill:hover:before,
+.file_upload_btn label:hover:before,
 .submit_button .btn:hover:before.
 .btn-fill-line:hover:before {
 	-webkit-animation: criss-cross-left 0.7s both;
@@ -421,6 +426,7 @@ header .btn {
 	animation-direction: alternate;
 }
 .btn-line-fill:hover:after,
+.file_upload_btn label:hover:after,
 .submit_button .btn:hover:after,
 .btn-fill-line:hover:after {
 	-webkit-animation: criss-cross-right 0.7s both;
@@ -428,6 +434,12 @@ header .btn {
 	-webkit-animation-direction: alternate;
 	animation-direction: alternate;
 }
+.file_upload_btn label {
+	cursor: pointer;
+	padding: 12px 40px;
+	border-radius: 40px;
+}
+
 .btn-line-white {
 	border: 1px solid #fff;
 	color: #fff !important;
@@ -9666,6 +9678,9 @@ blockquote p:last-child {
 }
 .blog_post .blog_content .blog_title {
 	font-weight:500;
+}
+.grid_container .blog_post .blog_content .blog_title {
+    min-height: 60px;
 }
 
 .custom_select select {
