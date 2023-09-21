@@ -10071,12 +10071,19 @@ blockquote p:last-child {
 	border-right: 0;
 	border-top: 0;
 	border-radius: 0;
-	padding: 10px 0;
+	/*padding: 10px 0;
 	padding-left: 0px;
-	padding-left: 0;
+	padding-left: 0;*/
 }
 .field_form_line select.form-control.not_chosen {
 	color: #8893A4;
+}
+.field_form_line .custom_select::before {
+	top: auto;
+	bottom: 5px;
+}
+.field_form_line .custom_select select:focus-visible {
+    outline: none;
 }
 .field_form_line .form-group {
 	margin-bottom:40px;
