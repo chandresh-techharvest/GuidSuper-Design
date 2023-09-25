@@ -3637,7 +3637,7 @@ input.text {
 	font-size: 40px;
 }
 .icon_box_style9 .icon_box_content {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	display: inline-block;
 	vertical-align: middle;
 }
