@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="Templatemanja" name="author">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SITE TITLE -->
+<title>Australasian Pharmacy </title>
+<!-- Favicon Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+<!-- Animation CSS -->
+<link rel="stylesheet" href="assets/css/animate.css">	
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/linearicons.css">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="preloader">
+    <div class="sk-folding-cube">
+		<div class="sk-folding-cube-box">
+			<div class="sk-cube1 sk-cube"></div>
+			<div class="sk-cube2 sk-cube"></div>
+			<div class="sk-cube4 sk-cube"></div>
+			<div class="sk-cube3 sk-cube"></div>
+		</div>
+	</div>
+</div>
+<!-- END LOADER -->
+
+<!-- START POPUP -->
+<div class="modal fade lr_popup" id="Login" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    	<div class="modal-content border-0">
+    		<div class="modal-body">
+            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <div class="row no-gutters">
+                	<div class="col-12">
+                    	<div class="padding_eight_all">	
+                            <div class="heading_s1">
+                                <h4>Login</h4>
+                            </div>
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" required="" class="form-control" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="login_footer form-group">
+                                    <div class="chek-form">
+                                        <div class="custome-checkbox">
+                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
+                                            <label class="form-check-label" for="exampleCheckbox1"><span>Remember me</span></label>
+                                        </div>
+                                    </div>
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default btn-block" name="login">Log in</button>
+                                </div>
+                            </form>
+                            <div class="different_login">
+                                <span> or</span>
+                            </div>
+                            <div class="form-note text-center">Don't Have an Account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#SignUp">Sign up now</a></div>
+                        </div>
+                	</div>
+                </div>
+        	</div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade lr_popup" id="SignUp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    	<div class="modal-content border-0">
+    		<div class="modal-body">
+            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <div class="row no-gutters">
+                	<div class="col-12">
+                    	<div class="padding_eight_all">	
+                            <div class="heading_s1">
+                                <h4>Sign Up</h4>
+                            </div>
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" required="" class="form-control" name="name" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" class="form-control" name="email" placeholder="Enter Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Confirm Password">
+                                </div>
+                                <div class="login_footer form-group">
+                                    <div class="chek-form">
+                                        <div class="custome-checkbox">
+                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox3" value="">
+                                            <label class="form-check-label" for="exampleCheckbox3"><span>I agree to terms &amp; Policy.</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default btn-block" name="register">Register</button>
+                                </div>
+                            </form>
+                            <div class="different_login">
+                                <span> or</span>
+                            </div>
+                            <ul class="btn-login list_none text-center">
+                                <li><a href="#" class="btn btn-facebook rounded-0"><i class="ion-social-facebook"></i>Facebook</a></li>
+                                <li><a href="#" class="btn btn-google rounded-0"><i class="ion-social-googleplus"></i>Google</a></li>
+                            </ul>
+                            <div class="form-note text-center">Already have an account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#Login">Login Here!</a></div>
+                        </div>
+                	</div>
+                </div>
+        	</div>
+        </div>
+    </div>
+</div>
+<!-- END POPUP --> 
+
+<!-- START HEADER -->
+<header class="header_wrap dark_skin fixed-top main_menu_size_16">
+	<div class="top-header bg_dark_blue light_skin">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-7">
+                	<div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                        <ul class="header_list text-center text-md-left">
+                            <li><a href="#"> About us </a></li>
+                            <li><a href="#"> Contact us </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Login">Signup / Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="container-fluid">
+    	<nav class="navbar navbar-expand-lg justify-content-between"> 
+            <a class="navbar-brand" href="index.html">
+                <img class="logo_light" src="assets/images/Guild-Logo-white.png" alt="Australian Pharmacy logo" />
+                <img class="logo_dark" src="assets/images/Guild-Logo.png" alt="Australian Pharmacy logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                	<li><a class="nav-link nav_item" href="#"> Industry News </a></li>
+                    <li><a class="nav-link nav_item" href="#"> Health & Wellbeing </a></li>
+                    <li><a class="nav-link nav_item" href="#"> Business </a></li>
+                    <li><a class="nav-link nav_item" href="#"> Featured </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"> Education </a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Sub menu</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Sub Post</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Sub Page</a></li>
+                            </ul>
+                        </div>
+                    </li>  
+                    <li><a class="nav-link nav_item" href="#"> Publications </a></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav attr-nav align-items-center">
+                <li>
+                	<a href="javascript:void(0);" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
+                    <div class="search_wrap">
+                        <form>
+                            <input type="text" placeholder="Search" class="form-control" id="search_input">
+                            <button type="submit" class="search_icon"><i class="ion-ios-search-strong"></i></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+		</nav>
+	</div>
+</header>
+<!-- END HEADER --> 
+
+
+<!-- START ADs SECTION -->
+<div class="section pt_70 pb-0">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12 text-center">
+            	<img src="assets/images/ads-banner.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ADs SECTION -->
+
+<!-- START BLOG Featured -->
+<div class="section ">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_green">
+                	<h2> Featured </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-lg-8">
+            	<div class="blog_post border_div">
+                    <div class="blog_img blue_border">
+                        <a href="#">
+                            <img src="assets/images/blog1.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                            <p> I can almost hear the groans this topic often elicits. Yes, it's those dirty words again</p>
+                            <div class="blogs_tags">
+                            	<ul>
+                                	<li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            	<div class="sidebar">
+                	<div class="widget">
+                    	<div class="heading_s1 heading_yellow">
+                            <h2> Featured </h2>
+                        </div>
+                        <ul class="recent_post">
+                        	<li>
+                        		<div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        	</li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-12 ">
+            	<a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START BLOG Featured -->
+
+<!-- START ADs SECTION -->
+<div class="section p-0">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12 text-center">
+            	<img src="assets/images/ads-banner2.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ADs SECTION -->
+
+<!-- START BLOG FULL -->
+<div class="section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_blue">
+                	<h2> Full Width Feature </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-md-12">
+            	<div class="blog_list list_post">
+                    <div class="blog_post">
+                        <div class="blog_img blue_border">
+                            <a href="#">
+                                <img src="assets/images/blog-full.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="blog_content">
+                            <div class="blog_text">
+                            	<div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category Here </a>
+                                </div>
+                                <ul class="blog_meta">
+                                    <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                    <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                </ul>
+                                <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                <p> I can almost hear the groans this topic often elicits. Yes, it's those dirty words again - clinical records I can almost hear the groans this topic often elicits. Yes, it's those dirty words again - clinical records</p>
+                                <div class="blogs_tags">
+                                    <ul>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START BLOG FULL -->
+
+<!-- START ADs SECTION -->
+<div class="section p-0">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12 text-center">
+            	<img src="assets/images/ads-banner3.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ADs SECTION -->
+
+<!-- START BLOG Two Columns -->
+<div class="section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_green">
+                	<h2> Two Columns </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img blue_border">
+                        <a href="#">
+                            <img src="assets/images/blog22.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                            <div class="blogs_tags mt-3">
+                            	<ul>
+                                	<li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img blue_border">
+                        <a href="#">
+                            <img src="assets/images/blog22.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                        </div>
+                        <div class="blog_tags spacial_tag">
+                            <span class="blog_tags_cat bg-light-blue"> Pharmacist Only </span>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                            <div class="blogs_tags mt-3">
+                            	<ul>
+                                	<li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-12 ">
+            	<a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START BLOG Two Columns -->
+
+<!-- START ADs SECTION -->
+<div class="section p-0">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12 text-center">
+            	<img src="assets/images/ads-banner4.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ADs SECTION -->
+
+<!-- START BLOG 3 Columns -->
+<div class="section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_green">
+                	<h2> More Articles </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row three-col">
+        	<div class="col-lg-4 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog31.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> PRODUCTS </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                            <p> I can almost hear the groans this topic often elicits. Yes, it's those dirty words again - clinical records.... </p>
+                            <div class="blogs_tags mt-3">
+                            	<ul>
+                                	<li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog32.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                        </div>
+                        <div class="blog_tags spacial_tag">
+                            <span class="blog_tags_cat bg-light-blue"> Pharmacist Only </span>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> New pharmacist accreditation puts the focus on natural medicines </a></h3>
+                            <p> I can almost hear the groans this topic often elicits. Yes, it's those dirty words again - clinical records.... </p>
+                            <div class="blogs_tags mt-3">
+                            	<ul>
+                                	<li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog33.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> Professor Christine Kilpatrick appointed as Commission Chair </a></h3>
+                            <p> I can almost hear the groans this topic often elicits. Yes, it's those dirty words again - clinical records.... </p>
+                            <div class="blogs_tags mt-3">
+                            	<ul>
+                                	<li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                    <li> <a href="#"> Tags Go Here </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-12">
+            	<a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START BLOG 3 Columns -->
+
+<!-- START ADs SECTION -->
+<div class="section p-0">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12 text-center">
+            	<img src="assets/images/ads-banner5.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ADs SECTION -->
+
+<!-- START BLOG 4 Columns -->
+<div class="section">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_blue">
+                	<h2> Industry News </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row four-col">
+        	<div class="col-lg-3 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog31.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category Here </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog31.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                        </div>
+                        <div class="blog_tags spacial_tag">
+                            <span class="blog_tags_cat bg-light-blue"> Pharmacist Only </span>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog31.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category Here </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            	<div class="blog_post">
+                    <div class="blog_img green_border">
+                        <a href="#">
+                            <img src="assets/images/blog31.jpg" alt="">
+                        </a>
+                        <div class="blog_tags">
+                            <a class="blog_tags_cat bg_warning" href="#"> Category Here </a>
+                        </div>
+                    </div>
+                    <div class="blog_content">
+                        <div class="blog_text">
+                        	<ul class="blog_meta">
+                            	<li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                            <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-12">
+            	<a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- START BLOG 3 Columns -->
+
+<!-- START ADs SECTION -->
+<div class="section p-0">
+	<div class="container">
+    	<div class="row justify-content-center">
+        	<div class="col-md-12 text-center">
+            	<img src="assets/images/ads-banner6.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END ADs SECTION -->
+
+<!-- START BLOG 8-4 Columns -->
+<div class="section ">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_blue">
+                	<h2> Columns 8-4 </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-lg-8">
+            	<div class="border_div">
+                    <div class="blog_list list_post list_two">
+                        <div class="blog_post">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="assets/images/blog84.jpg" alt="">
+                                </a>
+                                <div class="blog_tags spacial_tag">
+                                    <span class="blog_tags_cat bg-light-blue"> Pharmacist Only </span>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h3 class="blog_heading"><a href="#"> From fear to opportunity: debunking myths and harnessing the power of AI in community pharmacy </a></h3>
+                                    <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open…. </p>
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_post">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="assets/images/blog84.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h3 class="blog_heading"><a href="#"> From fear to opportunity: debunking myths and harnessing the power of AI in community pharmacy </a></h3>
+                                    <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open…. </p>
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_post">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="assets/images/blog84.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h3 class="blog_heading"><a href="#"> From fear to opportunity: debunking myths and harnessing the power of AI in community pharmacy </a></h3>
+                                    <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open…. </p>
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            	<div class="sidebar pt-5 pt-lg-0">
+                	<div class="widget">
+                    	<div class="heading_s1 heading_yellow">
+                            <h2> Featured </h2>
+                        </div>
+                        <ul class="recent_post">
+                        	<li>
+                        		<div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        	</li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- START BLOG 8-4 Columns -->
+
+<!-- START BLOG Sidebar right -->
+<div class="section pt-0">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_blue">
+                	<h2> Sidebar right </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-lg-8">
+            	<div class="pr-0 pr-lg-5">
+                    <div class="blog_list list_post list_two">
+                        <div class="blog_post">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="assets/images/blog84.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h3 class="blog_heading"><a href="#"> From fear to opportunity: debunking myths and harnessing the power of AI in community pharmacy </a></h3>
+                                    <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open…. </p>
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_post">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="assets/images/blog84.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h3 class="blog_heading"><a href="#"> From fear to opportunity: debunking myths and harnessing the power of AI in community pharmacy </a></h3>
+                                    <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open…. </p>
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog_post">
+                            <div class="blog_img">
+                                <a href="#">
+                                    <img src="assets/images/blog84.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <h3 class="blog_heading"><a href="#"> From fear to opportunity: debunking myths and harnessing the power of AI in community pharmacy </a></h3>
+                                    <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open…. </p>
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ">
+                            <a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            	<div class="sidebar px-0 px-lg-4 pt-5 pt-lg-0">
+                	<div class="widget">
+                    	<div class="heading_s1">
+                            <h5> Sidebar text </h5>
+                        </div>
+                        <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open… </p>
+                    </div>
+                    <div class="widget">
+                    	<img src="assets/images/sidebar-ads-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- START BLOG Sidebar right -->
+
+<!-- START BLOG Sidebar right -->
+<div class="section pt-0">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-12">
+            	<div class="heading_s1 heading_blue">
+                	<h2> Sidebar right </h2>
+                </div>
+            </div>
+        </div>
+    	<div class="row">
+        	<div class="col-lg-8">
+                <div class="row two-col">
+                    <div class="col-md-6">
+                        <div class="blog_post">
+                            <div class="blog_img green_border">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="">
+                                </a>
+                                <div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                    <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                    <div class="blogs_tags mt-3">
+                                        <ul>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog_post">
+                            <div class="blog_img green_border">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="">
+                                </a>
+                                <div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                    <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                    <div class="blogs_tags mt-3">
+                                        <ul>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog_post">
+                            <div class="blog_img green_border">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="">
+                                </a>
+                                <div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                    <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                    <div class="blogs_tags mt-3">
+                                        <ul>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog_post">
+                            <div class="blog_img green_border">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="">
+                                </a>
+                                <div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                    <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                    <div class="blogs_tags mt-3">
+                                        <ul>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="pagination">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#"> NEXT <i class="linearicons-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+            	<div class="sidebar px-0 px-lg-4 pt-5 pt-lg-0">
+                	<div class="widget">
+                    	<div class="heading_s1">
+                            <h5> Sidebar text </h5>
+                        </div>
+                        <p> Pharmacy Connect Convenor Kos Sclavos AM announced today that early bird registration for this year's Pharmacy Connect are now open… </p>
+                    </div>
+                    <div class="widget">
+                    	<img src="assets/images/sidebar-ads-2.jpg" alt="">
+                    </div>
+                    <div class="widget">
+                        <div class="heading_s1 heading_light_blue">
+                            <h2> Tags </h2>
+                        </div>
+                        <div class="blogs_tags ">
+                            <ul>
+                                <li> <a href="#"> TAGS GO HERE </a> </li>
+                                <li> <a href="#"> Health & Wellbeing </a> </li>
+                                <li> <a href="#"> Biotech </a> </li>
+                                <li> <a href="#"> Cancer </a> </li>
+                                <li> <a href="#"> Diabetes </a> </li>
+                                <li> <a href="#"> Medical Research </a> </li>
+                                <li> <a href="#"> Business </a> </li>
+                                <li> <a href="#"> More tags here </a> </li>
+                                <li> <a href="#"> Health & Wellbeing </a> </li>
+                                <li> <a href="#"> Biotech </a> </li>
+                                <li> <a href="#"> Cancer </a> </li>
+                                <li> <a href="#"> Diabetes </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- START BLOG Sidebar right -->
+
+<!-- START TRANDING POST -->
+<div class="section bg_yellow ">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-12">
+            	<div class="heading_s3 text-center">
+                	<h2> Our Clients and Partners </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-12">
+            	<div class="carousel_slider owl-height owl-carousel owl-theme nav_style2" data-margin="30" data-loop="true" data-dots="false" data-nav="true" data-responsive='{"0":{"items": "1"}, "480":{"items": "2"}, "991":{"items": "3"}, "1199":{"items": "5"}}'>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://www.carbinemedia.com.au/" target="_blank">
+                                <img src="assets/images/Carbine-Media-Logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://goldcrossproducts.com.au/" target="_blank">
+                                <img src="assets/images/iNova-logo.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://www.lease1.com.au/" target="_blank">
+                                <img src="assets/images/lease1-logo-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://www.modeus.com.au/" target="_blank">
+                                <img src="assets/images/modeus-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://www.pccarx.com/" target="_blank">
+                                <img src="assets/images/PCCA-Logo.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://constellationtechnologies.com.au/" target="_blank">
+                                <img src="assets/images/CT_218-Logo_Web_standard@2x.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="http://codygroup.com.au/" target="_blank">
+                                <img src="assets/images/CodyGroupLogoSmall.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://www.afterpay.com/en-AU/pharmacy-guild-members" target="_blank">
+                                <img src="assets/images/Afterpay_Badge_BlackonMint-1-1-scaled.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="http://glucojel.com.au/" target="_blank">
+                                <img src="assets/images/Glucojel-Logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="partners_logo">
+                            <a href="https://goldx.com.au/member-perk/bupa---health-insurance-plan" target="_blank">
+                                <img src="assets/images/Bupa.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END TRANDING POST -->
+
+
+<!-- START FOOTER SECTION --> 
+<footer class="footer_dark green_border">
+	<div class="footer_top ">
+        <div class="container">
+        	<div class="row">
+            	<div class="col-12 text-center">
+                	<ul class="social_icons social_white">
+                    	<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-12 text-center">
+                	<div class="medium_divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-12 col-sm-12">
+                    <div class="widget">
+                        <h6 class="widget_title"> ABOUT AUSTRALASIAN PHARMACY </h6>
+                        <p> ITK is published by Gold Cross Products & Services Pty Ltd. </p>
+                        <p> The website is updated daily with the latest pharmacy-relevant news headlines, handpicked by our editor from trusted sources. CPD modules, drug briefs and editorials from the print publication are also published here.</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 offset-0 offset-lg-1 col-sm-4">
+                    <div class="widget">
+                    	<h6 class="widget_title"> NAVIGATION </h6>
+                        <ul class="widget_links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#"> News </a></li>
+                            <li><a href="#"> Industry </a></li>
+                            <li><a href="#"> Health </a></li>
+                            <li><a href="#"> Business </a></li>
+                            <li><a href="#"> Features </a></li>
+                            <li><a href="#"> Education </a></li>
+                            <li><a href="#"> Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-9 col-sm-8">
+                	<div class="widget">
+                        <div class="newsletter_box">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-12">
+                                    <div class="heading_s1 text-center">
+                                        <h4 class="mb-3"> Subscribe to newsletter </h4>
+                                        <p> Stay up to date! Get all the latest posts delivered straight to your inbox. </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="newsletter_form2 mt-2">
+                                        <form>
+                                        	<div class="row no-gutters justify-content-center">
+                                            	<div class="col-md-9">
+                                                	<div class="row no-gutters">
+                                                    	<div class="col-md-6">
+                                                        	<input required="" placeholder="Your Name" id="first-name" class="form-control form-control-sm" name="name" type="text">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                        	<input type="text" required="" class="form-control form-control-sm" placeholder="Your email address..">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                	<button type="submit" title="Subscribe" class="btn btn-default btn-sm" name="submit" value="Submit">Subscribe</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer border-top-tran">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright m-0 text-center text-md-left"> © 2024 Pharmacy ITK. All rights reserved. </p>
+                </div>
+                <div class="col-md-6">
+                	<ul class="list_none footer_link text-center text-md-right">
+                    	<li><a href="#"> Terms & Conditions </a></li>
+                        <li><a href="#"> Privacy Policy </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION --> 
+
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
+
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-1.12.4.min.js"></script> 
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<!-- magnific-popup min js  --> 
+<script src="assets/js/magnific-popup.min.js"></script> 
+<!-- waypoints min js  --> 
+<script src="assets/js/waypoints.min.js"></script> 
+<!-- imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- isotope min js --> 
+<script src="assets/js/isotope.min.js"></script>
+<!-- jquery.appear js  -->
+<script src="assets/js/jquery.appear.js"></script>
+<!-- jquery.parallax-scroll js -->
+<script src="assets/js/jquery.parallax-scroll.js"></script>
+<!-- jquery.dd.min Js -->
+<script src="assets/js/jquery.dd.min.js"></script>
+<!-- scripts js --> 
+<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
