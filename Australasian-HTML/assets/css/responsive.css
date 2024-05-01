@@ -98,6 +98,14 @@
 	}
 	.four-col .blog_tags .blog_tags_cat {font-size:12px;}
 	.list_two.blog_list .blog_post .blog_img{height:auto;}
+	
+	.sidebar .recent_post .post_footer .post_content .blog_heading h6 {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		 -webkit-box-orient: vertical;
+	}
 }
 
 /* -------------------------------------------------
@@ -116,6 +124,9 @@
 }
 .section.pb_70, .pb_70 {
 	padding-bottom: 50px;
+}
+.section.pt_70, .pt_70 {
+	padding-top: 50px;
 }
 .section.pb_85, .pb_85 {
 	padding-bottom: 65px;
@@ -583,6 +594,7 @@ header.vertical_menu .navbar-collapse {
 .navbar .navbar-nav > li {
     margin-left: 0;
 }
+.navbar .navbar-nav:not(.attr-nav) > li {border:0;}
 .header_wrap .navbar-collapse {
 	background-color: #101227;
 } 
@@ -800,6 +812,13 @@ header .attr-nav + .social_icons {
   max-width: 767px
 ---------------------------------------------------*/
 @media only screen and (max-width: 767px) {
+.single_post .blog_title {
+	font-size: 30px;
+}
+.single_cat_tag li a {
+	padding: 10px 15px;
+	font-size: 12px;
+}
 .h1, h1 {
     font-size: 32px;
 }
@@ -823,13 +842,16 @@ p {
 	padding: 50px 0;
 }
 .section.small_pt, .top_footer.small_pt {
-	padding-top: 25px;
+	padding-top: 30px;
 }
 .section.small_pb, .top_footer.small_pb {
-	padding-bottom: 25px;
+	padding-bottom: 30px;
 }
 .section.pb_70, .pb_70 {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
+}
+.section.pt_70, .pt_70 {
+	padding-top: 30px;
 }
 .section.pb_20, .pb_20 {
 	padding-bottom: 0px;
@@ -979,6 +1001,14 @@ p {
 	right: -15px;
 }
 
+.single_blog_content .my-5 {
+	margin-top: 2rem !important;
+	margin-bottom: 2rem !important;
+}
+.single_blog_content .my-5 img {
+	margin: 0;
+}
+
 }
 /* -------------------------------------------------
   max-width: 640px
@@ -994,6 +1024,7 @@ p {
 	height: 45px;
 	line-height: 45px;
 }
+.blogs_tags li a {padding: 6px 10px;}
 }
 /* -------------------------------------------------
   max-width: 580px
@@ -1069,7 +1100,7 @@ p {
 ---------------------------------------------------*/
 @media only screen and (max-width: 575px) {
 .section.pb_70, .pb_70 {
-	padding-bottom: 15px;
+	/*padding-bottom: 15px;*/
 }
 .section,.newsletter_small {
 	padding: 30px 0;

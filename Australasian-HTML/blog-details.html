@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="Templatemanja" name="author">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SITE TITLE -->
+<title>Australasian Pharmacy | Blog Single page </title>
+<!-- Favicon Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+<!-- Animation CSS -->
+<link rel="stylesheet" href="assets/css/animate.css">	
+<!-- Latest Bootstrap min CSS -->
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- Icon Font CSS -->
+<link rel="stylesheet" href="assets/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/css/themify-icons.css">
+<link rel="stylesheet" href="assets/css/linearicons.css">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="assets/css/all.min.css">
+<!--- owl carousel CSS-->
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+<!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="assets/css/magnific-popup.css">
+<!-- Style CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="preloader">
+    <div class="sk-folding-cube">
+		<div class="sk-folding-cube-box">
+			<div class="sk-cube1 sk-cube"></div>
+			<div class="sk-cube2 sk-cube"></div>
+			<div class="sk-cube4 sk-cube"></div>
+			<div class="sk-cube3 sk-cube"></div>
+		</div>
+	</div>
+</div>
+<!-- END LOADER -->
+
+<!-- START POPUP -->
+<div class="modal fade lr_popup" id="Login" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    	<div class="modal-content border-0">
+    		<div class="modal-body">
+            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <div class="row no-gutters">
+                	<div class="col-12">
+                    	<div class="padding_eight_all">	
+                            <div class="heading_s1">
+                                <h4>Login</h4>
+                            </div>
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" required="" class="form-control" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="login_footer form-group">
+                                    <div class="chek-form">
+                                        <div class="custome-checkbox">
+                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox1" value="">
+                                            <label class="form-check-label" for="exampleCheckbox1"><span>Remember me</span></label>
+                                        </div>
+                                    </div>
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default btn-block" name="login">Log in</button>
+                                </div>
+                            </form>
+                            <div class="different_login">
+                                <span> or</span>
+                            </div>
+                            <div class="form-note text-center">Don't Have an Account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#SignUp">Sign up now</a></div>
+                        </div>
+                	</div>
+                </div>
+        	</div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade lr_popup" id="SignUp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-md modal-dialog-centered" role="document">
+    	<div class="modal-content border-0">
+    		<div class="modal-body">
+            	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+                <div class="row no-gutters">
+                	<div class="col-12">
+                    	<div class="padding_eight_all">	
+                            <div class="heading_s1">
+                                <h4>Sign Up</h4>
+                            </div>
+                            <form method="post">
+                                <div class="form-group">
+                                    <input type="text" required="" class="form-control" name="name" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" class="form-control" name="email" placeholder="Enter Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" required="" type="password" name="password" placeholder="Confirm Password">
+                                </div>
+                                <div class="login_footer form-group">
+                                    <div class="chek-form">
+                                        <div class="custome-checkbox">
+                                            <input class="form-check-input" type="checkbox" name="checkbox" id="exampleCheckbox3" value="">
+                                            <label class="form-check-label" for="exampleCheckbox3"><span>I agree to terms &amp; Policy.</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default btn-block" name="register">Register</button>
+                                </div>
+                            </form>
+                            
+                            <div class="form-note text-center">Already have an account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#Login">Login Here!</a></div>
+                        </div>
+                	</div>
+                </div>
+        	</div>
+        </div>
+    </div>
+</div>
+<!-- END POPUP --> 
+
+<!-- START HEADER -->
+<header class="header_wrap dark_skin fixed-top main_menu_size_16">
+	<div class="top-header bg_dark_blue light_skin">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    
+                </div>
+                <div class="col-md-7">
+                	<div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                        <ul class="header_list text-center text-md-left">
+                            <li><a href="#"> About us </a></li>
+                            <li><a href="#"> Contact us </a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#Login">Signup / Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="container-fluid">
+    	<nav class="navbar navbar-expand-lg justify-content-between"> 
+            <a class="navbar-brand" href="index.html">
+                <img class="logo_light" src="assets/images/Guild-Logo-white.png" alt="Australian Pharmacy logo" />
+                <img class="logo_dark" src="assets/images/Guild-Logo.png" alt="Australian Pharmacy logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="ion-android-menu"></span> </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                	<li><a class="nav-link nav_item" href="#"> Industry News </a></li>
+                    <li><a class="nav-link nav_item" href="#"> Health & Wellbeing </a></li>
+                    <li><a class="nav-link nav_item" href="#"> Business </a></li>
+                    <li><a class="nav-link nav_item" href="#"> Featured </a></li>
+                    <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"> Education </a>
+                        <div class="dropdown-menu">
+                            <ul> 
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Sub menu</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Sub Post</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Sub Page</a></li>
+                            </ul>
+                        </div>
+                    </li>  
+                    <li><a class="nav-link nav_item" href="#"> Publications </a></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav attr-nav align-items-center">
+                <li>
+                	<a href="javascript:void(0);" class="nav-link search_trigger"><i class="linearicons-magnifier"></i></a>
+                    <div class="search_wrap">
+                        <form>
+                            <input type="text" placeholder="Search" class="form-control" id="search_input">
+                            <button type="submit" class="search_icon"><i class="ion-ios-search-strong"></i></button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+		</nav>
+	</div>
+</header>
+<!-- END HEADER --> 
+
+
+<!-- START BLOG Sidebar right -->
+<div class="section pt_70 pb_70">
+	<div class="container">
+    	
+    	<div class="row">
+        	<div class="col-lg-8">
+            	<div class="single_post">
+                	<div class="blog_text">
+                    	<div class="single_blog_head">
+                            <h1 class="blog_title"> Article heading - World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </h1>
+                            <div class="single_cat_tag">
+                                <div class="single_cat">
+                                    <li><a href="#">CATEGORY </a></li>
+                                </div>
+                                <div class="single_sub_cat">
+                                    <li><a href="#"> Sub-Category </a></li>
+                                </div>
+                                <div class="blogs_tags">
+                                    <ul>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                        <li> <a href="#"> Tags Go Here </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="blog_meta">
+                                <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                            </ul>
+                        </div>
+                        <div class="single_blog_content">
+                        	<div class="text-center">
+                        		<img src="assets/images/single-blog.jpg" alt="">
+                            </div>
+                            <p> At a time when pharmacies, GPs, mental health providers and the broader health system are straining at the seams, we are presented with another great opportunity to look at the way we approach caring for those in our community who are ill, and to take a proactive and non-clinical approach where relevant. </p>
+                            <p> Social prescribing is an awkward term; it was coined to highlight the contrast of writing a traditional pharmaceutical prescription, with a 'social prescription' (social plan) when more appropriate. Social prescriptions can help people improve their health by addressing the root cause of their illness—to determine a solution—rather than solely relying on trying to repair the consequences. </p>
+                            <p> Social prescribing has rapidly caught on in other countries around the world as a powerful and proven approach to increasing wellbeing, producing positive outcomes for individuals, communities and the health economy. It's also been endorsed by the World Health Organisation, has its own global movement and is starting to gain traction here in Australia.  </p>
+                            <p> Throughout this column series, we'll take a look at exactly what social prescribing is, who could most benefit, examples already in place and the role pharmacists can play. </p>
+                            
+                            <div class="text-center my-5">
+                                <img src="assets/images/ads-banner2.jpg" alt="">
+                            </div>
+                            
+                            <p> To kick off, let's look at the social determinants of health. The contemporary approach to health and wellbeing recognises that the extent to which we connect with others and the world has significant bearing on our health and longevity. Human beings are complex creatures, with a range of factors contributing to our wellbeing. There are the basics such as age, place and gender; and the social, economic and political landscapes that surround us. And then there are our individual needs and preferences across a range of domains, including occupational (purpose), spiritual, intellectual, social, financial, emotional, creative and environmental. </p>
+                            <p> Physical and mental illness often show up when our needs are unmet, so it's important to dig beneath the symptoms for a holistic look at what it is that's making us unwell. </p>
+                            <p> You can click here for the <a href="https://www.youtube.com/watch?v=aTbgJZqCuCU" target="_blank"> Feros Care video </a> which explains social prescribing in detail or <a href="https://www.gspalliance.com/gspa-playbook"> here </a> to view the playbook developed by the Global Social Prescribing Alliance.</p>
+                            <p> Research shows that up to 50% of an individual's health is the outcome of a range of 'social determinants'. This has played out through the current health crisis. By seeking to protect our physical health (against COVID), our ability to achieve almost all other determinants of health has been compromised. Socialising, working, volunteering, and doing community activities and hobbies have been almost impossible; church has been halted and the arts crushed. We've become increasingly lonely, with an estimated two in five adults experiencing problematic loneliness (up from 1 in 4 in 2019). </p>
+                            <p> 'Because we are members of a social species, loneliness is a dangerous disease, increasing the risk of anxiety, depression, disturbed sleep, cognitive decline and other health issues.' Hugh Mackay, author of The Kindness Revolution </p>
+                            <p> Pharmacy staff are considered trusted advisors to many patients, and most pharmacy staff recognise those repeat patients who pop in for a chat about their health as much as to collect their script. Most will know of those who are lonely. If you have been advised of a local social prescribing program, it's great to refer; unlike the UK, most programs in Australia don't require a GP referral. There's also a pharmacist training program available for those wanting to learn and do more for those customers where medication may be only part of the solution, and over time, lobbying may create funding for pharmacies to provide a social script. </p>
+                            <p> Over the coming issues, we will take a deeper look at loneliness, now considered 'the biggest social issue of our time', programs that are working and the circumstances where social prescribing delivers the best results. </p>
+                            <p> Jo Winwood is the Head of Be Someone For Someone, an initiative of Feros Care to tackle loneliness in Australia. She is a member of a range of national and international organisations focusing on ending loneliness and improving social, heath and economic outcomes through evidence-based programs that tackle loneliness and isolation. </p>
+                            <p> Feros Care (Feros) is a reputable not-for-profit organisation, providing a broad range of services in both the ageing and disability sectors across Australia. We are registered with the Australian Charities and Not-for-Profits Commission. </p>
+                            <p> Our mission is to enable customers to grow bold, supporting them to live vibrant, healthy, independent and connected lives. </p>
+                            <p> For years, what has become increasingly distressing for our teams is the amount of loneliness and isolation we see—a tragedy in itself and with devastating impacts on physical and mental health. Our model of care has repeatedly shown us that addressing social determinants of health is key to wellbeing and good health, supported by ever increasing academic and social research. </p>
+                            <p> Feros is committed to tackling loneliness, now cited as the 'greatest social issue of our time', as a strategic imperative, establishing a major initiative, Be Someone For Someone, to spearhead this work. </p>
+                            
+                            
+                        </div>
+                        
+                        <div class="blog_social_share">
+                        	<p><strong> Share this article: </strong></p>
+                        	<ul class="social_icons rounded_social text-center">
+                                <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
+                                <li><a href="#" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
+                                <li><a href="#" class="sc_instagram"><i class="ion-social-linkedin"></i></a></li>
+                                <li><a href="#" class="sc_google"><i class="ion-email"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            	<div class="row">
+                    <div class="col-12">
+                        <div class="heading_s1 heading_blue">
+                            <h2> Similar Articles </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row two-col">
+                    <div class="col-md-6">
+                        <div class="blog_post">
+                            <div class="blog_img green_border">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="">
+                                </a>
+                                <div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                    <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                    <div class="blogs_tags mt-3">
+                                        <ul>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="blog_post">
+                            <div class="blog_img green_border">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="">
+                                </a>
+                                <div class="blog_tags">
+                                    <a class="blog_tags_cat bg_warning" href="#"> Category </a>
+                                </div>
+                            </div>
+                            <div class="blog_content">
+                                <div class="blog_text">
+                                    <ul class="blog_meta">
+                                        <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                        <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                    </ul>
+                                    <h3 class="blog_heading"><a href="#"> World Health Summit Regional Meeting in Australia opens on 22 April in Melbourne </a></h3>
+                                    <div class="blogs_tags mt-3">
+                                        <ul>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                            <li> <a href="#"> Tags Go Here </a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a class="btn btn-lg btn-dark-line" href="#"> SEE ALL <i class="ion-ios-arrow-thin-right"></i></a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-lg-4">
+            	<div class="sidebar px-0 px-lg-0 px-xl-4 pt-5 pt-lg-0">
+                	<div class="widget">
+                    	<img src="assets/images/sidebar-ads-1.jpg" alt="">
+                    </div>
+                	
+                    <div class="widget">
+                    	<div class="heading_s1 heading_yellow">
+                            <h2> Latest Articles </h2>
+                        </div>
+                        <ul class="recent_post">
+                        	<li>
+                        		<div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        	</li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="widget">
+                    	<div class="heading_s1 heading_blue">
+                            <h2> Featured Articles </h2>
+                        </div>
+                        <ul class="recent_post">
+                        	<li>
+                        		<div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        	</li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post_footer">
+                        			<div class="post_img">
+                        				<a href="#"><img src="assets/images/blog-small.jpg" alt=""></a>
+                        			</div>
+                                    <div class="post_content">
+                                    	<div class="blog_heading">
+                                        	<h6><a href="#"> Got a chronic disease and fear of needles? A prick-free natural alternative is on the horizon </a></h6>
+                                        </div>
+                                        <ul class="blog_meta ">
+                                            <li><a href="#"><span> AUTHOR HERE </span></a></li>
+                                            <li><a href="#"><span> 6 Jun 2023 </span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <div class="heading_s1 heading_light_blue">
+                            <h2> Tags </h2>
+                        </div>
+                        <div class="blogs_tags ">
+                            <ul>
+                                <li> <a href="#"> TAGS GO HERE </a> </li>
+                                <li> <a href="#"> Health & Wellbeing </a> </li>
+                                <li> <a href="#"> Biotech </a> </li>
+                                <li> <a href="#"> Cancer </a> </li>
+                                <li> <a href="#"> Diabetes </a> </li>
+                                <li> <a href="#"> Medical Research </a> </li>
+                                <li> <a href="#"> Business </a> </li>
+                                <li> <a href="#"> More tags here </a> </li>
+                                <li> <a href="#"> Health & Wellbeing </a> </li>
+                                <li> <a href="#"> Biotech </a> </li>
+                                <li> <a href="#"> Cancer </a> </li>
+                                <li> <a href="#"> Diabetes </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- START BLOG Sidebar right -->
+
+
+
+
+<!-- START FOOTER SECTION --> 
+<footer class="footer_dark green_border">
+	<div class="footer_top ">
+        <div class="container">
+        	<div class="row">
+            	<div class="col-12 text-center">
+                	<ul class="social_icons social_white">
+                    	<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                        <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col-12 text-center">
+                	<div class="medium_divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-md-12 col-sm-12">
+                    <div class="widget">
+                        <h6 class="widget_title"> ABOUT AUSTRALASIAN PHARMACY </h6>
+                        <p> ITK is published by Gold Cross Products & Services Pty Ltd. </p>
+                        <p> The website is updated daily with the latest pharmacy-relevant news headlines, handpicked by our editor from trusted sources. CPD modules, drug briefs and editorials from the print publication are also published here.</p>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-3 offset-0 offset-lg-1 col-sm-4">
+                    <div class="widget">
+                    	<h6 class="widget_title"> NAVIGATION </h6>
+                        <ul class="widget_links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#"> News </a></li>
+                            <li><a href="#"> Industry </a></li>
+                            <li><a href="#"> Health </a></li>
+                            <li><a href="#"> Business </a></li>
+                            <li><a href="#"> Features </a></li>
+                            <li><a href="#"> Education </a></li>
+                            <li><a href="#"> Contact Us </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-9 col-sm-8">
+                	<div class="widget">
+                        <div class="newsletter_box">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-12">
+                                    <div class="heading_s1 text-center">
+                                        <h4 class="mb-3"> Subscribe to newsletter </h4>
+                                        <p> Stay up to date! Get all the latest posts delivered straight to your inbox. </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="newsletter_form2 mt-2">
+                                        <form>
+                                        	<div class="row no-gutters justify-content-center">
+                                            	<div class="col-md-9">
+                                                	<div class="row no-gutters">
+                                                    	<div class="col-md-6">
+                                                        	<input required="" placeholder="Your Name" id="first-name" class="form-control form-control-sm" name="name" type="text">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                        	<input type="text" required="" class="form-control form-control-sm" placeholder="Your email address..">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                	<button type="submit" title="Subscribe" class="btn btn-default btn-sm" name="submit" value="Submit">Subscribe</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer border-top-tran">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright m-0 text-center text-md-left"> © 2024 Pharmacy ITK. All rights reserved. </p>
+                </div>
+                <div class="col-md-6">
+                	<ul class="list_none footer_link text-center text-md-right">
+                    	<li><a href="#"> Terms & Conditions </a></li>
+                        <li><a href="#"> Privacy Policy </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER SECTION --> 
+
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
+
+<!-- Latest jQuery --> 
+<script src="assets/js/jquery-1.12.4.min.js"></script> 
+<!-- Latest compiled and minified Bootstrap --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+<!-- owl-carousel min js  --> 
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script> 
+<!-- magnific-popup min js  --> 
+<script src="assets/js/magnific-popup.min.js"></script> 
+<!-- waypoints min js  --> 
+<script src="assets/js/waypoints.min.js"></script> 
+<!-- imagesloaded js -->
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<!-- isotope min js --> 
+<script src="assets/js/isotope.min.js"></script>
+<!-- jquery.appear js  -->
+<script src="assets/js/jquery.appear.js"></script>
+<!-- jquery.parallax-scroll js -->
+<script src="assets/js/jquery.parallax-scroll.js"></script>
+<!-- jquery.dd.min Js -->
+<script src="assets/js/jquery.dd.min.js"></script>
+<!-- scripts js --> 
+<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
