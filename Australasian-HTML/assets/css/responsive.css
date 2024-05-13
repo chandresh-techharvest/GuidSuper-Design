@@ -106,6 +106,14 @@
 		line-clamp: 3;
 		 -webkit-box-orient: vertical;
 	}
+	.big_image .recent_post .post_footer .post_content .blog_heading h6 {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 7;
+		line-clamp: 7;
+		-webkit-box-orient: vertical;
+		margin-bottom: 15px;
+	}
 }
 
 /* -------------------------------------------------
@@ -190,8 +198,8 @@
 	padding: 5px 8px;
 }
 .sidebar .recent_post .post_footer .post_img img {
-	height: 124px;
-	object-fit: cover;
+	/*height: 124px;
+	object-fit: cover;*/
 }
 .sidebar .recent_post .post_footer .post_content .blog_heading h6 {
 	overflow: hidden;
@@ -199,6 +207,14 @@
 	-webkit-line-clamp: 3;
 	line-clamp: 3;
 	-webkit-box-orient: vertical;
+}
+.big_image .recent_post .post_footer .post_content .blog_heading h6 {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	line-clamp: 7;
+	-webkit-box-orient: vertical;
+	margin-bottom: 15px;
 }
 .sidebar .recent_post .blog_meta li a {
 	font-size: 12px;
@@ -773,9 +789,20 @@ header .attr-nav + .social_icons {
 	padding: 0;
 }
 .sidebar .recent_post .post_footer .post_img { width:100%;}
+.big_image .post_img {
+	max-width: 40%;
+	-ms-flex: 0 0 40%;
+	flex: 0 0 40%;
+}
+.big_image .post_img img {
+	width:100%;
+}
+.big_image .recent_post .post_footer .post_content .blog_heading h6 {
+	font-size:20px;
+}
 .sidebar .recent_post .post_footer .post_img img {
-	height: 124px;
-	object-fit: cover;
+	/*height: 124px;
+	object-fit: cover;*/
 }
 .sidebar .recent_post .post_footer {
 	display: flex;
@@ -1009,6 +1036,10 @@ p {
 	margin: 0;
 }
 
+.big_image .recent_post .post_footer .post_content .blog_heading h6 {
+	font-size: 16px;
+}
+
 }
 /* -------------------------------------------------
   max-width: 640px
@@ -1214,6 +1245,11 @@ footer .widget,
 	margin-bottom: 20px;
 }
 
+.big_image .recent_post .post_footer .post_content .blog_heading h6 {
+	display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+}
 
 }
 /* -------------------------------------------------
@@ -1477,6 +1513,12 @@ blockquote p {
 }
 .comment_user img {
     max-width: 60px;
+}
+
+.big_image .recent_post .post_footer .post_content .blog_heading h6 {
+	display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 }
 /* -------------------------------------------------
