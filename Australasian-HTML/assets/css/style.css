@@ -2686,6 +2686,9 @@ header .search_trigger {
 /*===================================*
   06. START BLOG STYLE
 *===================================*/
+.mb_30, mb-30 {
+	margin-bottom:30px;
+}
 .blog_heading {
 	font-size: 26px;
 }
@@ -2698,8 +2701,11 @@ header .search_trigger {
 	padding: 20px;
 }
 .blog_post {
-	margin-bottom: 30px;
+	margin-bottom: 0px;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 5x rgba(0, 0, 0, 0.1);
 	transition: all 0.5s ease-in-out;
+	height: 100%;
 }
 .carousel_slider .blog_post {
 	margin-bottom: 0;
@@ -2719,8 +2725,8 @@ header .search_trigger {
 }
 .blog_content {
 	padding: 20px 30px 20px 30px;
-	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-	box-shadow: 0px 1px 5x rgba(0, 0, 0, 0.1);
+	/*-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 5x rgba(0, 0, 0, 0.1);*/
 }
 .blog_content .blog_meta {
 	margin-bottom:10px;
@@ -2742,6 +2748,45 @@ header .search_trigger {
 .blog_img img {
 	width: 100%;
 	transition: all 0.5s ease-in-out;
+}
+
+.feature .blog_img img {
+	height: 280px;
+	object-fit: cover;
+}
+.feature .blog_text p {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.feature .sidebar  .recent_post .post_footer .post_content .blog_heading h6 {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.featurev2 .blog_img img {
+	height: 240px;
+	object-fit: cover;
+}
+.featurev2 .blog_text p {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.sidebar.big_image .recent_post .post_footer .post_img img {
+	height: 235px;
+	object-fit: cover;
+	width: 100%;
+}
+.sidebar.big_image .widget {
+	margin-bottom: 0;
 }
 .blog_post:hover .blog_img img {
 	-moz-transform: scale(1.1);
@@ -3141,6 +3186,7 @@ header .search_trigger {
 }
 .sidebar .recent_post .post_footer .post_img img {
 	height: 100%;
+	width:100%;
 	object-fit: cover;
 }
 
@@ -3184,18 +3230,54 @@ header .search_trigger {
 	bottom: auto;
 }
 
+.two-col .blog_img img {
+	height: 340px;
+	object-fit: cover;
+}
+
+.category-two-col .blog_img img {
+	height: 270px;
+	object-fit: cover;
+}
+
 .three-col .blog_heading {
 	font-size: 20px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 .three-col .blog_heading {
-	min-height: 95px;
+	/*min-height: 95px;*/
+}
+.three-col .blog_img img {
+	height: 270px;
+	object-fit: cover;
+}
+.three-col .blog_post .blog_content .blog_text p {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 
 .four-col .blog_heading {
 	font-size: 16px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 .four-col .blog_content {
 	padding: 15px;
+}
+.four-col .blog_img img,
+.featurev2 .four-col .blog_img img {
+	height: 180px;
+	object-fit: cover;
 }
 
 .list_two .blog_content {
@@ -3203,6 +3285,11 @@ header .search_trigger {
 }
 .blog_list.list_two .blog_heading {
 	font-size: 20px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 .blog_list.blog_list .blog_post .blog_content .blog_text p {
 	margin-top: 15px;
@@ -3214,7 +3301,8 @@ header .search_trigger {
 	display: flex ;
 }
 .list_two.blog_list .blog_img {
-	max-width:360px;
+	max-width:320px;
+	flex: 0 0 320px;
 	width:100%;
 }
 .list_two.blog_list .blog_img a,
@@ -3222,10 +3310,22 @@ header .search_trigger {
 	height: 100%;
 	object-fit: cover;
 }
+.blog_list.list_two .blog_post .blog_img {
+	height: auto;
+	object-fit: cover;
+}
+.blog_list.list_post .blog_post .blog_img img {
+	max-height: 280px;
+}
 .list_two.blog_list .blog_post .blog_content .blog_text p {
 	line-height: 20px;	
 	margin-top: 10px;
 	margin-bottom: 10px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
 }
 .list_two .blog_img .spacial_tag {
 	left: 0;
