@@ -3188,6 +3188,10 @@ header .search_trigger {
 	height: 100%;
 	width:100%;
 	object-fit: cover;
+	max-height: 120px;
+}
+.sidebar.big_image .recent_post .post_footer .post_img img {
+	max-height:none;
 }
 
 .sidebar .recent_post .post_footer .post_content .blog_heading h6{
@@ -3314,7 +3318,7 @@ header .search_trigger {
 	height: auto;
 	object-fit: cover;
 }
-.blog_list.list_post .blog_post .blog_img img {
+.blog_list.list_two .blog_post .blog_img img {
 	max-height: 280px;
 }
 .list_two.blog_list .blog_post .blog_content .blog_text p {
