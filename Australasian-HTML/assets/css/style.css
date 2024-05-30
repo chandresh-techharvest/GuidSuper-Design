@@ -2770,7 +2770,7 @@ header .search_trigger {
 }
 
 .featurev2 .blog_img img {
-	height: 240px;
+	height: 360px;
 	object-fit: cover;
 }
 .featurev2 .blog_text p {
@@ -5412,6 +5412,9 @@ blockquote p {
 	color:#ffc424;
 }
 
+.login_footer .chek-form {
+	padding-left: 20px;
+}
 
 /*===================================*
   14. END ELEMENT DESIGN
