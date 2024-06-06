@@ -244,6 +244,8 @@ button:focus {
 	font-size:28px;
 	margin-right: 0;
 	margin-left: 10px;
+	line-height: normal;
+	vertical-align: middle;
 }
 
 .btn-dark-line:hover {
@@ -4139,7 +4141,7 @@ select option {
 	background-color: #fff;
 	border-color: #f4f4f4;
 }
-.pagination .page-item.active .page-link, 
+.pagination .page-item .page-link.active, 
 .pagination .page-item .page-link:hover {
 	background-color: #F7EDE8;
 	border-color: #15397F;
