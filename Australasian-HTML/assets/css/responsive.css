@@ -350,6 +350,11 @@ header .navbar .attr-nav li .search_trigger i {
 .header_list > li {
 	padding: 15px;
 }
+.top-header-menu .header_list + .header_list {
+	padding-left: 15px;
+}
+
+
 .main_menu_size_16 .navbar .navbar-nav > li > .nav-link, .dd_menu_size_16 .navbar .navbar-nav .dropdown-item, .dd_menu_size_16 .cart_list a {
 	font-size: 15px;
 }
@@ -1606,6 +1611,16 @@ blockquote p {
   max-width: 380px
 ---------------------------------------------------*/
 @media only screen and (max-width: 380px) {
+.header_list > li {
+	padding: 8px;
+}
+.contact_detail > li:first-child, .header_list > li:first-child {
+	padding-left: 0;
+}
+.top-header-menu .header_list + .header_list {
+	padding-left: 8px;
+}
+	
 .middle-header {
 	padding: 0;
 }
@@ -1698,5 +1713,6 @@ blockquote p {
 .four-col .blog_img img, .featurev2 .four-col .blog_img img, .two-col .blog_img img, .three-col .blog_img img, .category-two-col .blog_img img {
 	height: 220px;
 }
+
 
 }
